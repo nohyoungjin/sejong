@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 메인 비주얼 */
+/* visual */
 
 .visual {overflow:hidden;position:relative;z-index:1;height:47.99vw}
 
@@ -12,8 +12,8 @@
 .visual div img {width:100%}
 
 .slick-arrow {display:block;overflow:hidden;position:absolute;top:50%;z-index:10000;width:8vw;height:8vw;margin-top:-4vw;border:1px solid #e1e2e9;text-indent:-9999px;border-radius:4vw;cursor:pointer}
-.slick-prev {left:4vw;background:transparent url(../img/arrow_prev.png) 50% 50% no-repeat;background-size:2vw}
-.slick-next {right:4vw;background:transparent url(../img/arrow_next.png) 50% 50% no-repeat;background-size:2vw}
+.slick-prev {left:4vw;background:transparent url(../img/common/arrow_prev.png) 50% 50% no-repeat;background-size:2vw}
+.slick-next {right:4vw;background:transparent url(../img/common/arrow_next.png) 50% 50% no-repeat;background-size:2vw}
 
 .slick-prev span,
 .slick-next span {display:block;width:8vw;height:8vw;background-color:#fff;opacity:0.5}
@@ -24,6 +24,7 @@
 .visual .slick-dots li.slick-active a {position:relative;top:0.4vw;width:3.4vw;height:3.4vw;border:0.6vw solid #fff;background:transparent}
 
 .visual_btn {position:absolute;left:50%;bottom:4vw;z-index:1;margin-left:80px}
+
 .btn_play {display:block;width:10px;height:13px;background:url(../img/visual_pause_icon.png) no-repeat center;text-indent:-9999px;cursor:pointer}
 .btn_play.on {background:url(../img/visual_play_icon.png) no-repeat center}
 
@@ -42,16 +43,16 @@ ul.widget li + li + li + li + li {border-left:1px solid #eee}
 /* 바로가기 아이콘 */
 
 .ico.vol {display:block;width:14.58vw;height:12.36vw;margin:0 auto;background-size:cover !important}
-.ico.vol.icon01 {background:url(../img/banner_list_1.png) no-repeat center}
-.ico.vol.icon02 {background:url(../img/banner_list_2.png) no-repeat center}
-.ico.vol.icon03 {background:url(../img/banner_list_3.png) no-repeat center}
-.ico.vol.icon04 {background:url(../img/banner_list_4.png) no-repeat center}
-.ico.vol.icon05 {background:url(../img/banner_list_5.png) no-repeat center}
-.ico.vol.icon06 {background:url(../img/banner_list_6.png) no-repeat center}
+.ico.vol.icon01 {background:url(../img/main/banner_list_1.png) no-repeat center}
+.ico.vol.icon02 {background:url(../img/main/banner_list_2.png) no-repeat center}
+.ico.vol.icon03 {background:url(../img/main/banner_list_3.png) no-repeat center}
+.ico.vol.icon04 {background:url(../img/main/banner_list_4.png) no-repeat center}
+.ico.vol.icon05 {background:url(../img/main/banner_list_5.png) no-repeat center}
+.ico.vol.icon06 {background:url(../img/main/banner_list_6.png) no-repeat center}
 
 /* 전체, 공지, 이벤트 (HOME) */
 
-.boardList {padding:3vw 0 1vw;background:url(../img/dot.png) 0 0 repeat-x}
+.boardList {padding:3vw 0 1vw;background:url(../img/common/dot.png) 0 0 repeat-x}
 .boardList .topSection {position:relative;margin:3vw 0}
 
 .boardList .topSection ul:after {display:block;clear:both;content:""}
@@ -71,8 +72,8 @@ ul.widget li + li + li + li + li {border-left:1px solid #eee}
 .boardList .bottomSection ul li {position:relative;margin:0 2.67%;padding:2.3vw 0 0.2vw 5vw;border-bottom:1px dotted #eee}
 .boardList .bottomSection ul li:before {display:block;position:absolute;top:3.1vw;left:0;content:""}
 
-.boardList .bottomSection ul li.notice:before {width:2.98vw;height:2.98vw;background:url(../img/notice.png) no-repeat 0 0;background-size:2.98vw 2.98vw}
-.boardList .bottomSection ul li.event:before {width:2.08vw;height:2.77vw;margin:0 0 0 0.5vw;background:url(../img/event.png) no-repeat 0 0;background-size:2.08vw 2.77vw}
+.boardList .bottomSection ul li.notice:before {width:2.98vw;height:2.98vw;background:url(../img/common/notice.png) no-repeat 0 0;background-size:2.98vw 2.98vw}
+.boardList .bottomSection ul li.event:before {width:2.08vw;height:2.77vw;margin:0 0 0 0.5vw;background:url(../img/common/event.png) no-repeat 0 0;background-size:2.08vw 2.77vw}
 
 .boardList .bottomSection ul li a {display:inline-block;overflow:hidden;width:100%;font-size:3.1vw;color:#333;text-overflow:ellipsis;white-space:nowrap}
 .boardList .bottomSection ul li a strong {font-size:3.1vw;color:#333}
