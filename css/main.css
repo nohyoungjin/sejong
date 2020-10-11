@@ -25,8 +25,8 @@
 
 .visual_btn {position:absolute;left:50%;bottom:4vw;z-index:1;margin-left:80px}
 
-.btn_play {display:block;width:10px;height:13px;background:url(../img/visual_pause_icon.png) no-repeat center;text-indent:-9999px;cursor:pointer}
-.btn_play.on {background:url(../img/visual_play_icon.png) no-repeat center}
+/* .btn_play {display:block;width:10px;height:13px;background:url(../img/visual_pause_icon.png) no-repeat center;text-indent:-9999px;cursor:pointer}
+.btn_play.on {background:url(../img/visual_play_icon.png) no-repeat center} */
 
 /* 바로가기 (HOME) */
 
@@ -34,7 +34,7 @@ ul.widget {width:100%}
 ul.widget:after {display:block;clear:both;content:""}
 ul.widget li {float:left;width:33.3%;border-left:0;border-bottom:1px solid #eee;text-align:center;cursor:pointer}
 ul.widget li img {display:inline-block;width:auto;height:10vw}
-ul.widget li a {display:block;padding:3.7vw 0;font-size:3.38vw;font-weight:700;color:#333}
+ul.widget li a {display:block;padding:3.7vw 0;font-size:3.38vw;font-weight:500;color:#333}
 ul.widget li + li {border-left:1px solid #eee}
 ul.widget li + li + li {border-left:1px solid #eee}
 ul.widget li + li + li + li {border-left:0}
@@ -43,12 +43,12 @@ ul.widget li + li + li + li + li {border-left:1px solid #eee}
 /* 바로가기 아이콘 */
 
 .ico.vol {display:block;width:14.58vw;height:12.36vw;margin:0 auto;background-size:cover !important}
-.ico.vol.icon01 {background:url(../img/main/banner_list_1.png) no-repeat center}
-.ico.vol.icon02 {background:url(../img/main/banner_list_2.png) no-repeat center}
-.ico.vol.icon03 {background:url(../img/main/banner_list_3.png) no-repeat center}
-.ico.vol.icon04 {background:url(../img/main/banner_list_4.png) no-repeat center}
-.ico.vol.icon05 {background:url(../img/main/banner_list_5.png) no-repeat center}
-.ico.vol.icon06 {background:url(../img/main/banner_list_6.png) no-repeat center}
+.ico.vol.icon01 {background:url(../img/main/widget_1.png) no-repeat center}
+.ico.vol.icon02 {background:url(../img/main/widget_2.png) no-repeat center}
+.ico.vol.icon03 {background:url(../img/main/widget_3.png) no-repeat center}
+.ico.vol.icon04 {background:url(../img/main/widget_4.png) no-repeat center}
+.ico.vol.icon05 {background:url(../img/main/widget_5.png) no-repeat center}
+.ico.vol.icon06 {background:url(../img/main/widget_6.png) no-repeat center}
 
 /* 전체, 공지, 이벤트 (HOME) */
 
@@ -100,7 +100,7 @@ ul.aside.market li:nth-child(2n) {margin:2% 1.27% 2% 0.73%}
 .btn.t_xs {width:100%;padding:1.2vw 4vw;font-size:3.67vw}
 
 .btn:hover,
-.btn.selected {border:1px solid #81b952;background-color:#81b952;font-weight:700;color:#fff}
+.btn.selected {border:1px solid #81b952;background-color:#81b952;font-weight:500;color:#fff}
 
 .productList .bottomSection ul:after {display:block;clear:both;content:""}
 .productList .bottomSection ul li {float:left;width:46%;margin:2% 1.33% 2% 2.67%}
@@ -113,13 +113,13 @@ ul.aside.market li:nth-child(2n) {margin:2% 1.27% 2% 0.73%}
 .productList img {width:100%}
 .productList .box {position:relative;padding:3vw 2vw;border:1px solid #cecece}
 .productList .box:before {content:"";position:absolute;top:-0.7vw;left:2vw;width:1.38vw;height:0.69vw;background:url(../img/btn_arrow.png) no-repeat 0 0;background-size:1.38vw 0.69vw}
-.productList .box strong {display:inline-block;overflow:hidden;position:relative;width:100%;padding:0 0 2vw 0;font-size:3.47vw;text-align:left;text-overflow:ellipsis;white-space:nowrap}
+.productList .box strong {display:inline-block;overflow:hidden;position:relative;width:100%;padding:0 0 2vw 0;font-size:3.47vw;font-weight:500;text-align:left;text-overflow:ellipsis;white-space:nowrap}
 
 .productList .box strong.new:after {display:inline-block;position:relative;top:1vw;left:1vw;width:3.61vw;height:3.61vw;background:url(../img/btn_new.png) no-repeat 0 0;background-size:3.61vw 3.61vw;font-size:0;content:""}
 
 .productList dl {width:100%} 
 .productList dl:after {display:block;clear:both;content:""}
-.productList dt {position:relative;float:left;width:32%;padding:0 0 0 1.5vw;font-size:2.77vw;font-weight:700}
+.productList dt {position:relative;float:left;width:32%;padding:0 0 0 1.5vw;font-size:2.77vw;font-weight:500}
 .productList dt:before {content:'';display:block;position:absolute;top:2vw;left:0;width:0.5vw;height:0.5vw;background-color:#81b952;border-radius:50%}
 .productList dd {float:left;width:68%;font-size:2.77vw;color:#4c4b4b}
 

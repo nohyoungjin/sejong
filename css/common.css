@@ -1,6 +1,8 @@
 ﻿@charset "utf-8";
 
-/* 공통 */
+@import url("reset.css");
+
+/* common */
 
 .sect-t01 {margin:0 2.3vw 2.3vw}
 .sect-t02 {margin:0 0 2.3vw}
@@ -72,7 +74,7 @@ input[type=date]::-webkit-calendar-picker-indicator {display:none}
 .input::-moz-placeholder {color:#b1b1b1}
 .input:-ms-input-placeholder {color:#b1b1b1}
 
-/* 헤더 */
+/* header */
 
 html, body {height:100%;background:#fff;-webkit-overflow-scrolling:touch}
 #wrap {min-width:320px;height:100%;padding-top:23.4vw}
@@ -95,7 +97,7 @@ html, body {height:100%;background:#fff;-webkit-overflow-scrolling:touch}
 #header .head.sub .btn_search i {margin:-1.70vw 0 0 -1.60vw}
 
 #header .head .title {display:flex;height:100%;-webkit-dispaly:flex;justify-content:center;-webkit-justify-content:center;align-items:center;-webkit-align-items:center}
-#header .head .title a {font-size:3.8vw;font-weight:700;color:#fff}
+#header .head .title a {font-size:3.8vw;font-weight:500;color:#fff}
 #header .head .title img {width:17.53vw;margin-top:2.7vw}
 #header .head .title span {position:relative;top:-1.1vw;left:1vw}
 
@@ -139,7 +141,7 @@ body.open #header #gnb {right:0}
 #header #gnb .btm {position:relative;bottom:-17vw;padding:2.5vw 2.5vw 5.5vw 10vw;background:#66aa0e;color:#fff;font-size:2.4vw}
 #header .backface {display:none;overflow:hidden;position:fixed;top:0;left:0;bottom:0;z-index:100;width:100%;height:100%;background:#000;opacity:.5;filter:alpha(opacity=50)}
 
-/* 검색 */
+/* search */
 
 .top_search_wrap {display:none;position:absolute;left:0;z-index:1000;width:100%;padding:2.04vw;background:#66aa0e;-webkit-transition:all 0.5s ease;transition:all 0.5s ease}
 .top_search_wrap.open {display:block;top:12vw}
@@ -152,7 +154,7 @@ body.open #header #gnb {right:0}
 .top_search_wrap .s_wrap input[type="text"] {position:relative;height:8vw;padding:0 2vw;border:none;background:#fff;font-size:4vw;line-height:8vw;outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}
 .top_search_wrap .s_wrap .btn {display:inline-block;width:12vw;height:8vw;border:1px solid #333;background:#333;font-size:4vw;font-weight:700;color:#fff;text-align:center;line-height:8vw}
 
-/* 메뉴 (포인트, 매장) */
+/* menu (store, point) */
 
 p.txtGreeting {float:left;width:auto;padding:1vw 0 0;color:#fff;text-align:center}
 p.txtGreeting strong {color:#d9df18}
@@ -190,7 +192,7 @@ ul.depth3 li:nth-child(5) {width:16%}
 
 ul.depth3 li:before {display:block;position:absolute;top:50%;left:0;width:1px;height:3vw;margin-top:-1.5vw;background-color:#d2d2d2;content:''}
 ul.depth3 li:first-child:before {display:none}
-ul.depth3 li a {display:block;height:100%;padding:3.5vw 0;font-size:3.47vw;font-weight:700;color:#333}
+ul.depth3 li a {display:block;height:100%;padding:3.2vw 0;font-size:3.47vw;font-weight:500;color:#333}
 ul.depth3 li.on a {font-weight:700;color:#66aa0e}
 
 /* 회원가입 */
@@ -239,12 +241,12 @@ ul.depth4 li a {display:block;padding:3.5vw 0;font-size:3.47vw;font-weight:700;c
 ul.depth4 li.on {background-color:#fff}
 ul.depth4 li.on a {font-weight:700;color:#66aa0e}
 
-/* CONTENT */
+/* content */
 
 #container {position:relative;width:100%}
 #content {padding:0}
 
-/* 레이어 팝업 */
+/* layer popup */
 
 .notice_layer_popup { display:none; position: fixed; width:90%; top:50%; left:50%; padding:0 4.25vw 4.25vw; z-index: 30000; background:#fff; }
 .pop_top { position:relative; text-align: center; color: #343434; background:#fff; }
@@ -263,7 +265,7 @@ ul.depth4 li.on a {font-weight:700;color:#66aa0e}
 .pop_btm .pop_close .btn_pop_close span{ font-size:4.4vw; margin-left:1vw; }
 .popup_mask{ display:none; position:absolute; top:0; right:0; bottom:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; }
 
-/* FOOTER */
+/* footer */
 
 #footer {clear:both; position:relative;width:100%;padding:2.5vw 0;border-top:1px solid #d9d9d9;text-align:center}
 #footer .agree_wrap {width:42%;margin:0 auto}
@@ -275,7 +277,7 @@ ul.depth4 li.on a {font-weight:700;color:#66aa0e}
 #footer ul.agree li:before {display:block;position:absolute;top:50%;left:0;width:1px;height:2.6vw;margin-top:-1.3vw;background-color:#ccc;content:''}
 #footer ul.agree li:first-child:before {display:none}
 
-#footer ul.agree li a {font-size:3vw;font-weight:700}
+#footer ul.agree li a {font-size:3vw;font-weight:500}
 #footer strong {display:inline-block;font-size:3vw;color:#808080;letter-spacing:-0.15vw}
 #footer p.txt {font-size:3vw;text-align:center;color:#808080;letter-spacing:-0.15vw}
 

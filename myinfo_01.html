@@ -1,0 +1,100 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">내정보</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+	
+		<ul class="depth3 gray">
+			<li class="on w50"><a href="#">소비자회원</a></li>
+			<li class="w50"><a href="#">생산자(전용)</a></li>
+		</ul>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<section class="sect-t01">
+				<table class="tbl_info ver2">
+					<caption></caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">성명</th>
+							<td>이택*<button class="logout">로그아웃</button></td>
+						</tr>
+						<tr>
+							<th scope="row">포인트</th>
+							<td><p class="point">0,000</p>P</td>
+						</tr>
+						<tr>
+							<th scope="row">자주가는 매장</th>
+							<td>도담점<button class="store">설정</button></td>
+						</tr>
+						<tr>
+							<th scope="row">회원번호</th>
+							<td>00000</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<ul class="my_info">
+					<li><strong>개인정보</strong>
+						<ol>
+							<a href="myinfo_02.html"><li>개인정보 변경</li></a>
+							<a href="myinfo_04.html"><li>비밀번호 변경</li></a>
+							<a href="myinfo_05.html"><li>회원탈퇴</li></a>
+						</ol>
+					</li>
+					<li><strong>구매내역</strong>
+						<ol>
+							<a href="myinfo_buy_list.html"><li>직매장 상품 (상품평가)</li></a>
+							<a href="myinfo_cook.html"><li>요리교실</li></a>
+							<!-- <a href="#"><li>싱싱밥상</li></a> -->
+							<a href="myinfo_point_list.html"><li>포인트 적립내역</li></a>
+						</ol>
+					</li>
+					<li><strong>알림설정</strong>
+						<ol>
+							<a href="myinfo_notifi_list.html"><li>내 알림내역</li></a>
+							<a href="myinfo_notifi_setting.html"><li>알림수신 설정</li></a>
+							<a href="myinfo_likeprod_setting.html"><li>관심상품 설정</li></a>
+						</ol>
+					</li>
+					<li><strong>설정</strong>
+						<ol>
+							<a href="myinfo_version.html"><li>버전정보</li></a>
+							<a href="#"><li>회원약관</li></a>
+							<a href="#"><li class="end">개인정보 처리방침</li></a>
+						</ol>
+					</li>
+				</ul>
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>
