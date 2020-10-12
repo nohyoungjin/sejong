@@ -1,0 +1,15 @@
+str = ''
+str += '<div class="head sub">'
+str += ''
+str += '	<a href="javascript:" class="btn_back"><i></i></a>'
+str += '	<h1 class="title"><a href="#">세종형 로컬푸드</a></h1>'
+str += '	<a href="javascript:" class="btn_search"><i></i></a>'
+str += '	<div class="allmenu">'
+str += '		<a href="#btn_close" class="btn_open"><i></i></a>'
+str += '		<a href="javascript:" class="btn_search_close">닫기</a>'
+str += '	</div>'
+str += ''
+str += '</div>'
+str += ''
+
+document.write(str);

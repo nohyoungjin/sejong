@@ -25,18 +25,9 @@
 
 	<div id="header">
 
-		<div class="head sub">
-			<a href="javascript:" class="btn_back"><i></i></a>
-			<h1 class="title"><a href="#">세종형 로컬푸드</a></h1>
-			<a href="javascript:" class="btn_search"><i></i></a>
-			<div class="allmenu">
-				<a href="#btn_close" class="btn_open"><i></i></a>
-				<a href="javascript:" class="btn_search_close">닫기</a>
-			</div>
-		</div>
+		<script src="inc/head_sub.js"></script>
 		
-		<!--#include file="inc/gnb.asp"-->
-		<jsp:include page="inc/gnb.asp"/>
+		<script src="inc/gnb.js"></script>
 
 		<ul class="depth3 gray">
 			<li class="on w50"><a href="#">세종형 로컬푸드</a></li>
@@ -44,11 +35,11 @@
 		</ul>
 
 	</div>
+
 	<!-- //header -->
 	
     <div id="container">
 
-	    <!-- 개별 페이지 -->
 	    <div id="content">
 
 			<section class="sect-t01 sejong">
@@ -117,9 +108,24 @@
 			</section>
 
 	    </div>
-	    <!-- //개별 페이지 -->
 
     </div>
 
-<!--#include file="inc/footer.asp"-->
-<jsp:include page="inc/footer.asp"/>
+	<!-- //container -->
+
+	<!-- footer -->
+
+	<script src="inc/footer.js"></script>
+	
+	<!-- //footer -->
+
+</div>
+
+<!-- //wrap -->
+
+<script src="js/jquery-barcode.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/util.js"></script>
+
+</body>
+</html>

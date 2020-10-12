@@ -1,22 +1,26 @@
 ﻿function openPInfo() {
+
     var os;
     var mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
-    if (mobile) {
+   
+	if (mobile) {
 
         // 유저에이전트를 불러와서 OS를 구분합니다.
 
         var userAgent = navigator.userAgent.toLowerCase();
-        if (userAgent.search("android") > -1)
-            os = "android";
-        else if ((userAgent.search("iphone") > -1) || (userAgent.search("ipod") > -1) || (userAgent.search("ipad") > -1))
-            os = "ios";
+        if (userAgent.search('android') > -1)
+            os = 'android';
+        else if ((userAgent.search('iphone') > -1) || (userAgent.search('ipod') > -1) || (userAgent.search('ipad') > -1))
+            os = 'ios';
         else
-            os = "else";
+            os = 'else';
+
     } else {
 
         // 모바일이 아닐 때
 
-        os = "nomobile";
+        os = 'nomobile';
+
     }
 
     if (os == 'ios') {
@@ -24,56 +28,29 @@
     } else if (os == 'android') {
         window.Android.openPersonalInfo();
     } else {
-        alert("모바일이 아닙니다.");
-    }
-}
-
-function goRecorder() {
-    var os;
-    var mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
-    if (mobile) {
-
-        // 유저에이전트를 불러와서 OS를 구분합니다.
-
-        var userAgent = navigator.userAgent.toLowerCase();
-        if (userAgent.search("android") > -1)
-            os = "android";
-        else if ((userAgent.search("iphone") > -1) || (userAgent.search("ipod") > -1) || (userAgent.search("ipad") > -1))
-            os = "ios";
-        else
-            os = "else";
-    } else {
-
-        // 모바일이 아닐 때
-
-        os = "nomobile";
+        alert('모바일이 아닙니다.');
     }
 
-    if (os == 'ios') {
-        webkit.messageHandlers.startRecording.postMessage("");
-    } else if (os == 'android') {
-        window.Android.startRecording();
-    } else {
-        alert("모바일이 아닙니다.");
-    }
 }
 
 function empty(e) {
+
     switch (e) {
-        case "":
+        case '':
         case null:
-        case typeof this == "undefined":
+        case typeof this == 'undefined':
             return true;
         default:
             return false;
     }
+
 }
 
 $(function () {
 
 	// 높이값 조정
 
-	if ($("#header .depth3").length) {
+	if ($('#header .depth3').length) {
 		$('#wrap').css('padding-top','23.4vw');
 	} else {
 		$('#wrap').css('padding-top','11.6vw');
@@ -83,7 +60,7 @@ $(function () {
 
     $('.btn_search').on('click', function(e) {
 
-		$('.btn_search').css('z-index' , '1000');  /* 20171113 수정 */  
+		$('.btn_search').css('z-index','1000');
 
         if ($("#h_search").hasClass("open")) {
 			$(".btn_search").removeClass("open");
