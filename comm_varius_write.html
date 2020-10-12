@@ -1,0 +1,116 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">커뮤니티</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+		<ul class="depth3 black">
+			<li class="w33"><a href="#">공지사항</a></li>
+			<li class="on w33"><a href="#">이모저모</a></li>
+			<li class="w33"><a href="#">문의</a></li>
+		</ul>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<section class="sect-t01 nickname write">
+
+				<p class="qaTxt">[클린 캠페인] 비방, 욕설, 광고 글은 동의 없이 삭제 처리 됩니다.<br>이용에 참고해 주세요.</p>
+
+				<form action="" method="post">
+					<div class="form_table ver2">
+						<table border="1" cellspacing="0">
+						<tbody>
+							<tr>
+								<th scope="row">작성자</th>
+								<td><strong>라온세상</strong></td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="star">*</span>&nbsp;제목</th>
+								<td>
+									<input type="text" id="tit" name="tit" class="w100" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="star">*</span>&nbsp;내용</th>
+								<td>
+									<div class="btn1 btn2">
+										<button class="btn l weight w_l register">사진등록</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td  colspan="2">
+									<textarea name="" rows="10" title="" class="i_textarea w100">
+									</textarea>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2" scope="row"><span class="star">*</span>&nbsp;이미지</th>
+							</tr>
+							<tr>
+								<td  colspan="2">
+									<ul style="width:100%;" class="thum_regi">
+										<li>
+											<img src="img/fix_cook01.png" alt="">
+											<button class="btn l weight w_l del">삭제</button>
+										</li>
+										<li>
+											<img src="img/fix_cook01.png" alt="">
+											<button class="btn l weight w_l del">삭제</button>
+										</li>
+										<li>
+											<img src="img/fix_cook01.png" alt="">
+											<button class="btn l weight w_l del">삭제</button>
+										</li>
+										<li>
+											<img src="img/fix_cook01.png" alt="">
+											<button class="btn l weight w_l del">삭제</button>
+										</li>
+										<li>
+											<img src="img/fix_cook01.png" alt="">
+											<button class="btn l weight w_l del">삭제</button>
+										</li>
+										<li>
+											<img src="img/fix_cook01.png" alt="">
+											<button class="btn l weight w_l del">삭제</button>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+					<div class="box-input02">
+							<a href="javascript:"><button class="btn m weight w_l confirm varius">올리기</button></a>
+						</div>
+				</form>
+
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>
