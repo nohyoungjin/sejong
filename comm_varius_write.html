@@ -1,22 +1,33 @@
-<!--#include file="inc/header.asp"-->
-<jsp:include page="inc/header.asp"/>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  	<meta name="format-detection" content="address=no, email=no">
+  	<meta property="og:title" content="세종시 로컬푸드"/>
+  	<meta property="og:description" content=""/>
+    <title>세종시 로컬푸드</title>	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/page.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery-ui-1.11.4.js"></script>
+</head>
+
+<body>
+
+<!-- wrap -->
 
 <div id="wrap">
+
 	<!-- header -->
+
 	<div id="header">
 
-		<div class="head sub">
-			<a href="javascript:" class="btn_back"><i></i></a>
-			<h1 class="title"><a href="#">커뮤니티</a></h1>
-			<a href="javascript:" class="btn_search"><i></i></a>
-			<div class="allmenu">
-				<a href="#btn_close" class="btn_open"><i></i></a>
-				<a href="javascript:" class="btn_search_close">닫기</a>
-			</div>
-		</div>
+		<script src="inc/head_sub.js"></script>
 		
-		<!--#include file="inc/gnb.asp"-->
-		<jsp:include page="inc/gnb.asp"/>
+		<script src="inc/gnb.js"></script>
 
 		<ul class="depth3 black">
 			<li class="w33"><a href="#">공지사항</a></li>
@@ -25,11 +36,13 @@
 		</ul>
 
 	</div>
+
 	<!-- //header -->
 	
+	<!-- container -->
+
     <div id="container">
 
-	    <!-- 개별 페이지 -->
 	    <div id="content">
 
 			<section class="sect-t01 nickname write">
@@ -39,78 +52,93 @@
 				<form action="" method="post">
 					<div class="form_table ver2">
 						<table border="1" cellspacing="0">
-						<tbody>
-							<tr>
-								<th scope="row">작성자</th>
-								<td><strong>라온세상</strong></td>
-							</tr>
-							<tr>
-								<th scope="row"><span class="star">*</span>&nbsp;제목</th>
-								<td>
-									<input type="text" id="tit" name="tit" class="w100" />
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><span class="star">*</span>&nbsp;내용</th>
-								<td>
-									<div class="btn1 btn2">
-										<button class="btn l weight w_l register">사진등록</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td  colspan="2">
-									<textarea name="" rows="10" title="" class="i_textarea w100">
-									</textarea>
-								</td>
-							</tr>
-							<tr>
-								<th colspan="2" scope="row"><span class="star">*</span>&nbsp;이미지</th>
-							</tr>
-							<tr>
-								<td  colspan="2">
-									<ul style="width:100%;" class="thum_regi">
-										<li>
-											<img src="img/fix_cook01.png" alt="">
-											<button class="btn l weight w_l del">삭제</button>
-										</li>
-										<li>
-											<img src="img/fix_cook01.png" alt="">
-											<button class="btn l weight w_l del">삭제</button>
-										</li>
-										<li>
-											<img src="img/fix_cook01.png" alt="">
-											<button class="btn l weight w_l del">삭제</button>
-										</li>
-										<li>
-											<img src="img/fix_cook01.png" alt="">
-											<button class="btn l weight w_l del">삭제</button>
-										</li>
-										<li>
-											<img src="img/fix_cook01.png" alt="">
-											<button class="btn l weight w_l del">삭제</button>
-										</li>
-										<li>
-											<img src="img/fix_cook01.png" alt="">
-											<button class="btn l weight w_l del">삭제</button>
-										</li>
-									</ul>
-								</td>
-							</tr>
-						</tbody>
+							<tbody>
+								<tr>
+									<th scope="row">작성자</th>
+									<td><strong>라온세상</strong></td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="star">*</span>&nbsp;제목</th>
+									<td>
+										<input type="text" id="tit" name="tit" class="w100" />
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="star">*</span>&nbsp;내용</th>
+									<td>
+										<div class="btn1 btn2">
+											<button class="btn l weight w_l register">사진등록</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td  colspan="2">
+										<textarea name="" rows="10" title="" class="i_textarea w100">
+										</textarea>
+									</td>
+								</tr>
+								<tr>
+									<th colspan="2" scope="row"><span class="star">*</span>&nbsp;이미지</th>
+								</tr>
+								<tr>
+									<td  colspan="2">
+										<ul style="width:100%;" class="thum_regi">
+											<li>
+												<img src="img/fix_cook01.png" alt="">
+												<button class="btn l weight w_l del">삭제</button>
+											</li>
+											<li>
+												<img src="img/fix_cook01.png" alt="">
+												<button class="btn l weight w_l del">삭제</button>
+											</li>
+											<li>
+												<img src="img/fix_cook01.png" alt="">
+												<button class="btn l weight w_l del">삭제</button>
+											</li>
+											<li>
+												<img src="img/fix_cook01.png" alt="">
+												<button class="btn l weight w_l del">삭제</button>
+											</li>
+											<li>
+												<img src="img/fix_cook01.png" alt="">
+												<button class="btn l weight w_l del">삭제</button>
+											</li>
+											<li>
+												<img src="img/fix_cook01.png" alt="">
+												<button class="btn l weight w_l del">삭제</button>
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 					<div class="box-input02">
-							<a href="javascript:"><button class="btn m weight w_l confirm varius">올리기</button></a>
-						</div>
+						<a href="javascript:"><button class="btn m weight w_l confirm varius">올리기</button></a>
+					</div>
 				</form>
 
 			</section>
 
 	    </div>
-	    <!-- //개별 페이지 -->
 
     </div>
 
-<!--#include file="inc/footer.asp"-->
-<jsp:include page="inc/footer.asp"/>
+	<!-- //container -->
+
+	<!-- footer -->
+
+	<script src="inc/footer.js"></script>
+	
+	<!-- //footer -->
+
+</div>
+
+<!-- //wrap -->
+
+<script src="js/jquery-barcode.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/util.js"></script>
+
+</body>
+</html>
