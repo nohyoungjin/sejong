@@ -1,0 +1,162 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">싱싱장터</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+	
+		<ul class="depth3 black">
+			<li class="w25"><a href="#">소개</a></li>
+			<li class="w25"><a href="#">지점안내</a></li>
+			<li class="on w25"><a href="#">상품소개</a></li>
+			<li class="w25"><a href="#">생산자입점안내</a></li>
+		</ul>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<ul class="depth4">
+				<li class="on w25"><a href="#">추천상품</a></li>
+				<li class="w25"><a href="#">인기상품</a></li>
+				<li class="w25"><a href="#">상품검색</a></li>
+				<li class="w25"><a href="#">요리검색</a></li>
+			</ul>
+
+			<section class="sect-t01">
+				<div class="searchBox01">
+					<div>
+						<select name="" id="" class="select" title="대분류 전체">
+							<option value="">대분류 전체</option>
+						</select>
+					</div>
+					<div>
+						<select name="" id="" class="select" title="중분류 전체">
+							<option value="">중분류 전체</option>
+						</select>
+					</div>
+					<div>
+						<select name="" id="" class="select" title="재고 전체">
+							<option value="">재고 선택</option>
+							<option value="">재고 전체</option>
+							<option value="">여유 있음</option>
+							<option value="">매진 임박</option>
+							<option value="">재고 없음</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="searchBox02">
+					<span><input type="text" name="srch_prod_nm" id="srch_prod_nm" title="상품명 검색" placeholder="상품명을 입력 해 주세요"/></span>
+					<span><button name="searchBtn" id="searchBtn" value="검색">검색</button></span>
+				</div>
+				
+				<hr class="hr01">
+
+				<div class="productList">
+					<div class="topSection">
+						<ul class="aside market">
+							<li><button class="btn t_xs c_weight selected" title="도담점">도담점(1호점)</button></li>
+							<li><button class="btn t_xs c_weight" title="아름점">아름점(2호점)</button></li>
+						</ul>
+					</div>			
+					<div class="bottomSection place">
+						<ul>
+							<li>
+								<a href="market_farm_list.html">
+								<div class="thumnail">
+									<img src="img/p_01.png" alt="">
+								</div>
+								<div class="box">
+									<strong class="new"><span>딸기(설향)</span></strong><!-- 20180118 span tag 추가 -->
+									<dl>
+										<dt>재&nbsp;&nbsp;고</dt>
+										<dd>재고없음</dd>
+										<dt>판매가격</dt>
+										<dd>5,000원 ~ 8,000원</dd>
+									</dl>
+								</div>
+								</a>
+							</li>
+							<li>
+								<a href="market_farm_list.html">
+								<div class="thumnail">
+									<img src="img/p_02.png" alt="">
+								</div>
+								<div class="box">
+									<strong class="new"><span>완숙토마토</span></strong><!-- 20180118 span tag 추가 -->
+									<dl>
+										<dt>재&nbsp;&nbsp;고</dt>
+										<dd class="red">매진임박</dd>
+										<dt>판매가격</dt>
+										<dd>5,000원 ~ 8,000원</dd>
+									</dl>
+								</div>
+								</a>
+							</li>
+							<li>
+								<a href="market_farm_list.html">
+								<div class="thumnail">
+									<img src="img/p_03.png" alt="">
+								</div>
+								<div class="box">
+									<strong><span>행복유정란</span></strong><!-- 20180118 span tag 추가 -->
+									<dl>
+										<dt>재&nbsp;&nbsp;고</dt>
+										<dd class="green">여유있음</dd>
+										<dt>판매가격</dt>
+										<dd>5,000원 ~ 8,000원</dd>
+									</dl>
+								</div>
+								</a>
+							</li>
+							<li>
+								<a href="market_farm_list.html">
+								<div class="thumnail">
+									<img src="img/p_04.png" alt="">
+								</div>
+								<div class="box">
+									<strong><span>행복감자</span></strong><!-- 20180118 span tag 추가 -->
+									<dl>
+										<dt>재&nbsp;&nbsp;고</dt>
+										<dd class="red">매진임박</dd>
+										<dt>판매가격</dt>
+										<dd>5,000원 ~ 8,000원</dd>
+									</dl>
+								</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="box-input03">
+						<a href="javascript:" class="btn more">더보기</a>
+					</div>
+
+				</div>
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>
