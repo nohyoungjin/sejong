@@ -152,7 +152,7 @@ body.open #header #gnb {right:0}
 .top_search_wrap .s_wrap .fr {float:left;width:16%;margin-left:2%}
 
 .top_search_wrap .s_wrap input[type="text"] {position:relative;height:8vw;padding:0 2vw;border:none;background:#fff;font-size:4vw;line-height:8vw;outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}
-.top_search_wrap .s_wrap .btn {display:inline-block;width:12vw;height:8vw;border:1px solid #333;background:#333;font-size:4vw;font-weight:700;color:#fff;text-align:center;line-height:8vw}
+.top_search_wrap .s_wrap .btn {display:inline-block;width:12vw;height:8vw;border:1px solid #333;background:#333;font-size:4vw;color:#fff;text-align:center;line-height:8vw}
 
 /* menu (store, point) */
 
@@ -278,7 +278,7 @@ ul.depth4 li.on a {font-weight:700;color:#66aa0e}
 #footer ul.agree li:first-child:before {display:none}
 
 #footer ul.agree li a {font-size:3vw;font-weight:500}
-#footer strong {display:inline-block;font-size:3vw;color:#808080;letter-spacing:-0.15vw}
+#footer strong {display:inline-block;font-size:3vw;font-weight:500;color:#808080;letter-spacing:-0.15vw}
 #footer p.txt {font-size:3vw;text-align:center;color:#808080;letter-spacing:-0.15vw}
 
 /* 약관 */
