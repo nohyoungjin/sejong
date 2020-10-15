@@ -1,22 +1,32 @@
-<!--#include file="inc/header.asp"-->
-<jsp:include page="inc/header.asp"/>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  	<meta name="format-detection" content="address=no, email=no">
+  	<meta property="og:title" content="세종시 로컬푸드"/>
+  	<meta property="og:description" content=""/>
+    <title>세종시 로컬푸드</title>	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/page.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery-ui-1.11.4.js"></script>
+</head>
+
+<body>
+
+<!-- wrap -->
 
 <div id="wrap">
+
 	<!-- header -->
+
 	<div id="header">
 
-		<div class="head sub">
-			<a href="javascript:" class="btn_back"><i></i></a>
-			<h1 class="title"><a href="#">싱싱장터</a></h1>
-			<a href="javascript:" class="btn_search"><i></i></a>
-			<div class="allmenu">
-				<a href="#btn_close" class="btn_open"><i></i></a>
-				<a href="javascript:" class="btn_search_close">닫기</a>
-			</div>
-		</div>
+		<script src="inc/head_sub.js"></script>
 		
-		<!--#include file="inc/gnb.asp"-->
-		<jsp:include page="inc/gnb.asp"/>
+		<script src="inc/gnb.js"></script>
 
 		<ul class="depth3 black">
 			<li class="w25"><a href="#">소개</a></li>
@@ -26,11 +36,11 @@
 		</ul>
 
 	</div>
+
 	<!-- //header -->
 	
     <div id="container">
 
-	    <!-- 개별 페이지 -->
 	    <div id="content">
 
 			<ul class="depth4">
@@ -41,22 +51,28 @@
 			<section class="sect-t01 go" style="margin-top:5vw;">
 				
 				<!-- * Daum 지도 - 지도퍼가기 -->
-<!-- 1. 지도 노드 -->
-<div id="daumRoughmapContainer1516769497488" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div>
 
-<!--
-	2. 설치 스크립트
-	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://spi.maps.daum.net/imap/map_js_init/roughmapLoader.js"></script>
+				<!-- 1. 지도 노드 -->
 
-<!-- 3. 실행 스크립트 -->
-<script charset="UTF-8">
-	new daum.roughmap.Lander({
-		"timestamp" : "1516769497488",
-		"key" : "mh7e",
-	}).render();
-</script>
+				<div id="daumRoughmapContainer1516769497488" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div>
+
+				<!--
+					2. 설치 스크립트
+					* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+				-->
+
+				<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://spi.maps.daum.net/imap/map_js_init/roughmapLoader.js"></script>
+
+				<!-- 3. 실행 스크립트 -->
+
+				<script charset="UTF-8">
+
+					new daum.roughmap.Lander({
+						"timestamp" : "1516769497488",
+						"key" : "mh7e",
+					}).render();
+
+				</script>
 
 				<div class="btn_both">
 					<div class="fl">싱싱장터 직매장 1호점(본점)은?</div>
@@ -164,9 +180,24 @@
 			</section>
 
 	    </div>
-	    <!-- //개별 페이지 -->
 
     </div>
 
-<!--#include file="inc/footer.asp"-->
-<jsp:include page="inc/footer.asp"/>
+	<!-- //container -->
+
+	<!-- footer -->
+
+	<script src="inc/footer.js"></script>
+	
+	<!-- //footer -->
+
+</div>
+
+<!-- //wrap -->
+
+<script src="js/jquery-barcode.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/util.js"></script>
+
+</body>
+</html>
