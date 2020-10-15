@@ -236,10 +236,10 @@ ul.depth4 li:nth-child(4) {width:18%}
 ul.depth4 li:nth-child(5) {width:15%}
 
 ul.depth4 li:first-child:before {display:none}
-ul.depth4 li a {display:block;padding:3.5vw 0;font-size:3.47vw;font-weight:700;color:#333}
+ul.depth4 li a {display:block;padding:3.5vw 0;font-size:3.47vw;font-weight:500;color:#333}
 
 ul.depth4 li.on {background-color:#fff}
-ul.depth4 li.on a {font-weight:700;color:#66aa0e}
+ul.depth4 li.on a {color:#66aa0e}
 
 /* content */
 
