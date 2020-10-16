@@ -1,0 +1,77 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">판매내역</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<section class="sect-t01">
+
+				<div class="box_date">
+					<span>기간</span>
+					<span>
+						<input type="date" class="input" title="조회기간 시작일" value="연도-월-일">
+					</span>
+					<span>
+						<input type="date" class="input" title="조회기간 종료일" value="연도-월-일">
+					</span>
+				</div>
+
+				<div class="box_store">
+					<span>판매지점</span>
+					<span>
+						<select name="">
+							<option>선택</option>
+							<option>도담점</option>
+							<option>아름점</option>
+						</select>
+					</span>
+				</div>
+
+				<div class="box-input03">
+					<button class="btn item">품목 자음 검색</button>
+				</div>
+
+				<!-- 결과값 없음 -->
+
+				<div class="no_result" style="text-align:center;">해당 조회 내역이 없습니다.</div>
+
+				<!-- <ul class="search_list sell_list">
+					<a href="javascript:"><li>전체</li></a>
+					<a href="javascript:"><li>애호박 1개</li></a>
+					<a href="javascript:"><li>참기름 200g</li></a>
+					<a href="javascript:"><li>고구마</li></a>
+					<a href="javascript:"><li>감자</li></a>
+					<a href="javascript:"><li>옥수수</li></a>
+				</ul> -->
+
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>

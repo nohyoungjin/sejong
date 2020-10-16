@@ -1,0 +1,158 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">포인트 적립내역(상세)</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<section class="sect-t01 buy view">
+
+				<strong class="sale_tit">2017년 11월 21일</strong>
+				<p><strong>구매지점 :</strong> 도담점</p>
+				<p><strong>구매일자 :</strong> 0000-00-00 / 결제방법 : 카드결제</p>
+
+				<div class="table buy ver7">
+					<table border="1" cellspacing="0">
+					<colgroup>
+						<col width="28%"><col width="17%"><col width="13%"><col width="12%"><col width="13%"><col width="17%">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th scope="colgroup">상품명</th>
+							<th scope="colgroup">농가명</th>
+							<th scope="colgroup">단가</th>
+							<th scope="colgroup">수량</th>
+							<th scope="colgroup">금액</th>
+							<th scope="colgroup">상품평</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>행복유정란(10구)</td>
+							<td>이슬희</td>
+							<td>3,700</td>
+							<td>1</td>
+							<td>3,700</td>
+							<td><a href="#layer" class="varius_write_btn">등록</a></td>
+						</tr>
+						<tr>
+							<td>한우양지(272g)</td>
+							<td>이현준</td>
+							<td>6,700</td>
+							<td>1</td>
+							<td>6,700</td>
+							<td><a href="#layer1" class="varius_write_btn1">적극추천</a></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4">상품합계</td>
+							<td colspan="2">39,000</td>
+						</tr>
+						<tr>
+							<td colspan="4">포인트 합계</td>
+							<td colspan="2">78</td>
+						</tr>
+					</tfoot>
+					</table>
+				</div>
+
+				<div class="layer product" id="layer" style="display: none;position: fixed;z-index: 100000;background: #Fff;left: 5vw;width: 90%;top: 14%;padding: 0 0 5vw 0;">
+					<h2>상품평 등록</h2>
+					<section>
+						<h3>상품평을 등록해 주세요. 등록한 상품평은<br>상품정보에 노출되어 다른 소비자와 공유하게 됩니다.</h3>
+						<table class="tbl_info tbl_info2 ver2 mg0">
+							<caption></caption>
+							<colgroup>
+								<col>
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">상품명</th>
+									<td>행복유정란(10구)</td>
+									<th scope="row">농가명</th>
+									<td>김종현</td>
+								</tr>
+							</tbody>
+						</table>
+						<ul>
+							<a href="javascript:"><li class="two">적극<br>추천</li></a>
+							<a href="javascript:"><li>추천</li></a>
+							<a href="javascript:"><li>보통</li></a>
+							<a href="javascript:"><li class="two">추천<br>안함</li></a>
+							<a href="javascript:"><li>나쁨</li></a>
+						</ul>
+						<textarea name="" rows="10" title="" class="i_textarea w100" placeholder="상품평을 입력해 주세요. (10자 이상 100자 이내)"></textarea>
+						<div class="box-input02">
+							<a href="javascript:"><button class="btn m weight w_l confirm">확인</button></a>
+							<button class="btn m weight w_l cancel">취소</button>
+						</div>
+					</section>
+				</div>
+
+				<div class="layer product" id="layer1" style="display: none;position: fixed;z-index: 100000;background: #Fff;left: 5vw;width: 90%;top: 14%;padding: 0 0 5vw 0;">
+					<h2>상품평 등록</h2>
+					<section>
+						<h3>상품평을 등록해 주세요. 등록한 상품평은 상품정보에 노출되어 다른 소비자와 공유하게 됩니다.</h3>
+						<table class="tbl_info tbl_info2 ver2 mg0">
+							<caption></caption>
+							<colgroup>
+								<col>
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">상품명</th>
+									<td>행복유정란(10구)</td>
+									<th scope="row">농가명</th>
+									<td>김종현</td>
+								</tr>
+							</tbody>
+						</table>
+						<ul>
+							<a class="on" href="javascript:"><li class="two">적극<br>추천</li></a>
+							<a href="javascript:"><li>추천</li></a>
+							<a href="javascript:"><li>보통</li></a>
+							<a href="javascript:"><li class="two">추천<br>안함</li></a>
+							<a href="javascript:"><li>나쁨</li></a>
+						</ul>
+						<p>쪽파가 매우 신선해서 마음에 들었어요~ 추천합니다.쪽파가 매우 신선해서 마음에 들었어요~ 추천합니다.쪽파가 매우 신선해서 마음에 들었어요~ 추천합니다.</p>
+						<div class="box-input02">
+							<a href="javascript:"><button class="btn m weight w_l confirm">확인</button></a>
+							<button class="btn m weight w_l cancel">취소</button>
+						</div>
+					</section>
+				</div>
+
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>

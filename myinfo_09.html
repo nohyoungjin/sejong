@@ -1,0 +1,91 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<!--  -->
+<link href="css/yj.css" type="text/css" rel="stylesheet">
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">정산내역</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<section class="sect-t01">
+
+				<div class="box_date">
+					<span>기간</span>
+					<span>
+						<input type="date" class="input" title="조회기간 시작일" value="연도-월-일">
+					</span>
+					<span>
+						<input type="date" class="input" title="조회기간 종료일" value="연도-월-일">
+					</span>
+				</div>
+
+				<div class="box_store">
+					<span>판매지점</span>
+					<span>
+						<select name="">
+							<option>전체</option>
+							<option>도담점</option>
+							<option>아름점</option>
+						</select>
+					</span>
+				</div>
+
+				<div class="table ver2">
+					<table border="1" cellspacing="0">
+					<colgroup>
+						<col width="35%"><col width="20%"><col width="45%">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th scope="colgroup">정산기간</th>
+							<th scope="colgroup">판매지점</th>
+							<th scope="colgroup">판매금액</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2017.10.09<br>~<br>2017.10.15</td>
+							<td>도담점</td>
+							<td><a href="#"><em class="red">526,860</em> 원</a></td>
+						</tr>
+						<tr>
+							<td>2017.10.01<br>~<br>2017.10.08</td>
+							<td>아름점</td>
+							<td><a href="#"><em class="red">767,340</em> 원</a></td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>

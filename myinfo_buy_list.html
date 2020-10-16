@@ -1,0 +1,96 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">직매장 상품(구매내역)</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<div class="searchBox01 buy">
+					<div>
+						<label for="">지점</label>	
+						<select name="" id="" class="select" title="지점 선택">
+							<option value="">전체</option>
+						</select>
+					</div>
+					<div>
+						<label for="">기간</label>
+						<select name="" id="" class="select" title="년 선택">
+							<option value="">2017</option>
+						</select>
+						<select name="" id="" class="select" title="월 선택">
+							<option value="">11</option>
+						</select>
+					</div>
+					<div>
+						<button name="searchBtn" id="searchBtn" value="조회">조회</button>
+					</div>
+				</div>
+
+			<section class="sect-t01">
+
+				<p class="searchTxt buy">구매일시나 구매상품을 터치하면<br>세부 구매내역 및 상품평을 등록 할 수 있습니다.</p>
+
+				<strong class="sale_tit">2017년 11월</strong>
+				<p>총 4회, 116,000원</p>
+
+				<div class="table buy ver7">
+					<table border="1" cellspacing="0">
+					<colgroup>
+						<col width="16%"><col width="24%"><col width="24%"><col width="17%"><col width="19%">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th scope="colgroup">구매지점</th>
+							<th scope="colgroup">구매일시</th>
+							<th scope="colgroup">구매상품</th>
+							<th scope="colgroup">결재방법</th>
+							<th scope="colgroup">금액(원)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="myinfo_buy_view.html">도담점</a></td>
+							<td><a href="myinfo_buy_view.html">0000-00-00</a></td>
+							<td><a href="myinfo_buy_view.html">시금치 300g</a></td>
+							<td><a href="myinfo_buy_view.html">현금결제</a></td>
+							<td><a href="myinfo_buy_view.html">8,000</a></td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+
+				<div class="box-input03">
+					<a href="javascript:" class="btn more">더보기</a>
+				</div>
+
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>

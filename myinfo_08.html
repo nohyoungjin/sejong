@@ -1,0 +1,119 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">판매내역상세</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<div class="sale_both">
+				<div class="fl"><em>‘애호박’</em> 판매내역</div>
+				<div class="fr">’17.10.23 ~ ’17.10.24</div>
+			</div>
+
+			<section class="sect-t01">
+
+				<div class="table ver1">
+					<table border="1" cellspacing="0">
+					<colgroup>
+						<col width="50%"><col width="50%">
+					</colgroup>
+					<caption></caption>
+					<tbody>
+						<tr>
+							<th scope="row">조회기간 판매총액</th>
+							<td class="amount"><em class="red">13,600</em> 원</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+
+				<strong class="sale_tit">도담점</strong>
+
+				<div class="table">
+					<table border="1" cellspacing="0">
+					<colgroup>
+						<col width="32%"><col width="18%"><col width="25%"><col width="25%">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th scope="colgroup">상품(단위)</th>
+							<th scope="colgroup">수량</th>
+							<th scope="colgroup">단가</th>
+							<th scope="colgroup">판매금액</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>애호박<br>(2개)</td>
+							<td>4</td>
+							<td><em class="green">1,000</em> 원</td>
+							<td><em class="red">4,000</em> 원</td>
+						</tr>
+						<tr>
+							<td>애호박<br>(2개)</td>
+							<td>4</td>
+							<td><em class="green">1,400</em> 원</td>
+							<td><em class="red">5,600</em> 원</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+
+				<strong class="sale_tit">아름점</strong>
+
+				<div class="table ver1_5">
+					<table border="1" cellspacing="0">
+					<colgroup>
+						<col width="32%"><col width="18%"><col width="25%"><col width="25%">
+					</colgroup>
+					<caption></caption>
+					<thead>
+						<tr>
+							<th scope="colgroup">상품(단위)</th>
+							<th scope="colgroup">수량</th>
+							<th scope="colgroup">단가</th>
+							<th scope="colgroup">판매금액</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>애호박<br>(2개)</td>
+							<td>4</td>
+							<td><em class="green">1,000</em> 원</td>
+							<td><em class="red">4,000</em> 원</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>

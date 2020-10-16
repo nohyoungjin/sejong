@@ -1,0 +1,96 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">상품소개관리</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<ul class="depth4">
+				<li class="on w50"><a href="#">농가소개 등록</a></li>
+				<li class="w50"><a href="#">상품정보 등록</a></li>
+			</ul>
+
+			<section class="sect-t01 farminfo">
+
+				<p class="searchTxt">등록한 농가소개는 싱싱장터 앱 상품소개에 공통으로 사용됩니다.<br>해당글의 게재(노출)는 관리자 승인 후 반영됩니다.</p>
+
+				<div class="wrap_cont">
+					
+					<div class="table ver12">
+						<table border="1" cellspacing="0">
+						<colgroup>
+							<col width="30%"><col>
+						</colgroup>
+						<caption></caption>
+						<tbody>
+							<tr>
+								<th scope="row">내 주출하처</th>
+								<td><strong>도담점</strong></td>
+							</tr>
+							<tr>
+								<th scope="row">관리자 승인여부</th>
+								<td><strong>0000-00-00 00:00:00</strong>&nbsp;&nbsp;<strong class="situ">관리자 승인완료</strong></td>
+							</tr>
+						</tbody>
+						</table>
+					</div>	
+					
+					<ul class="lst_app">
+						<li>
+							<div class="thmb"><img src="img/tmp_thmb.png" alt=""></div>
+							<div class="btn_area">
+								<a href="#" class="btn m normal a1">삭제</a>
+								<a href="#" class="btn m weight a2">사진등록</a>
+							</div>
+						</li>
+					</ul>
+
+					<form action="" method="post">
+						<div class="form_table ver2">
+							<table border="1" cellspacing="0">
+							<tbody>
+								<tr>
+									<td colspan="2">
+										<textarea name="" rows="10" title="" class="i_textarea w100"></textarea>
+									</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+						<div class="box-input02">
+							<a href="javascript:"><button class="btn m weight w_l confirm varius">올리기</button></a>
+						</div>
+					</form>
+
+				</div>
+
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>

@@ -1,0 +1,211 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<script type="text/javascript">
+
+$(function() {
+	$(window).load(function() {
+		cookiedata = document.cookie;
+		if(cookiedata.indexOf("close=Y") < 0) {
+			$(".notice_pop").css("display","block");
+			$(".backface").css("display","block");
+			$(".layer").css("display", "block");
+			$(".layer").css("z-index", "99999999");
+			$(".btn_search").css("z-index","1");
+			$(".btn_back").css("z-index","1");
+			var el = $($(this).attr('href'));
+			if(!el.hasClass('open')){
+				el.addClass('open');
+			}else{
+				el.removeClass('open');
+			  }
+		}
+	});
+});
+
+function getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1);
+		if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+	}
+	return "";
+}
+
+function setCookie(cname, cvalue, exdays) {
+	var d = new Date();
+	d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function couponClose() {
+	if($("input[name='pop']").is(":checked") == true) {
+		setCookie("close","Y",1);
+	}
+	$(".notice_pop").css("display","none");
+	$(".notice_pop").fadeOut(700, function() {
+		$(".modal_overlay").remove();
+	});
+}
+
+</script>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">내정보</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+	
+		<ul class="depth3 gray">
+			<li class="w50"><a href="#">소비자회원</a></li>
+			<li class="on w50"><a href="#">생산자(전용)</a></li>
+		</ul>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<section class="sect-t01">
+
+				<table class="tbl_info ver2">
+					<caption></caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">농가명</th>
+							<td>채성*</td>
+						</tr>
+						<tr>
+							<th scope="row">농가번호</th>
+							<td>00</td>
+						</tr>
+						<tr>
+							<th scope="row">농가약정서 동의</th>
+							<td>0000-00-00 00:00:00</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<ul class="metro">
+					<li>
+						<a href="">
+							<img src="img/m_01.png" alt="">
+							판매내역
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/m_02.png" alt="">
+							정산내역
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/m_03.png" alt="">
+							상품소개관리
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/m_04.png" alt="">
+							농가약정서
+						</a>
+					</li>
+				</ul>
+
+				<div class="btn_both">
+					<div class="fl">생산자 공지사항</div>
+				</div>
+
+				<div class="producer">
+					<ul>
+						<a href="myinfo_notice_view.html">
+							<li>
+								<em>공지</em><span>2017.11.09</span>
+								<p>싱싱장터 아름점 임시개장 안내</p>
+								<img src="img/notice_new.png" alt="">
+							</li>
+						</a>
+						<a href="javascript:">
+							<li>
+								<em>공지</em><span>2017.11.09</span>
+								<p>싱싱문화관 오픈 이벤트 안내</p>
+								<img src="img/notice_new.png" alt="">
+							</li>
+						</a>
+						<a href="javascript:">
+							<li>
+								<em>공지</em><span>2017.11.09</span>
+								<p>싱싱장터 아름점 임시개장 안내</p>
+							</li>
+						</a>
+					</ul>
+					<div class="box-input03">
+						<a href="javascript:" class="btn more">더보기</a>
+					</div>
+				</div>
+
+				<!-- 20180205 공지 팝업-->
+				<div class="layer notice_pop hide" id="layer">
+	
+					<a class="popup_close close" href="javascript:couponClose();"><img src="img/noticepop_close.png" alt=""></a>
+					<div class="wrapCheckAgree notice">
+						<form name="frm">
+							<input type="checkbox" id="notice_cancel" class="checkbox auto notice" name="pop">
+							<label for="notice_cancel" class="label t_check02">오늘 하루 안보기</label>
+						</form>
+					</div>
+				
+					<dl class="list-notice-hn01 view">
+						<dt class="wrapTit">
+							<section>
+								<span class="notice">공지</span>
+								<span class="date">2017.11.09</span>
+								<span class="tit">
+									<p>싱싱문화관 오픈 이벤트 안내</p>	
+								</span>
+							</section>
+						</dt>
+						<dd class="cont">
+							<!-- 첨부파일이 있을 경우 -->
+							<div class="down">
+								<img src="img/board_file.png" alt="">
+								<a href="#" class="download"><span>싱싱장터 오픈 기념 이벤트.doc</span></a>
+							</div>
+							<img src="img/noticeview_img.jpg" alt="">
+							<p>싱싱장터 오픈 기념 이벤트싱싱장터 오픈 기념 이벤트싱싱장터 오픈 기념 이벤트싱싱장터 오픈 기념 이벤트싱싱장터 오픈 기념 이벤트싱싱장터 오픈 기념 이벤트싱싱장터 오픈 기념 이벤트싱싱장터 오픈 기념 이벤트</p>
+						</dd> 
+					</dl>
+				</div>
+				<!-- 20180205 공지 팝업-->
+				
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>

@@ -1,0 +1,86 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">정산내역상세</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<div class="sale_both">
+				<div class="fl"><em>정산기간</em></div>
+				<div class="fl">’17.10.23 ~ ’17.10.24</div>
+			</div>
+
+			<section class="sect-t01">
+
+				<strong class="sale_tit">도담점</strong>
+
+				<div class="table ver3">
+					<table border="1" cellspacing="0">
+					<colgroup>
+						<col width="26%"><col width="74%">
+					</colgroup>
+					<caption></caption>
+					<tbody>
+						<tr>
+							<th scope="row">판매품목</th>
+							<td>8 종</td>
+						</tr>
+						<tr>
+							<th scope="row">판매총건</th>
+							<td>352 건</td>
+						</tr>
+						<tr>
+							<th scope="row">총판매금</th>
+							<td><em class="red">590,900</em> 원</td>
+						</tr>
+						<tr>
+							<th scope="row">취소</th>
+							<td><em class="green">-5,500</em> 원</td>
+						</tr>
+						<tr>
+							<th scope="row">수수료</th>
+							<td>58,540 원</td>
+						</tr>
+						<tr>
+							<th scope="row">실정산금액</th>
+							<td>526,860 원</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+
+				<div class="box-input02">
+					<button class="btn m weight w33">정산상세조회</button>
+					<button class="btn m weight w33">취소내역조회</button>
+				</div>
+
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>

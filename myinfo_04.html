@@ -1,0 +1,62 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">비밀번호 변경</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+			
+			<div class="txt-notice02">
+				<p>새로운 비밀번호를 입력해 주세요</p>
+			</div>
+			
+			<section class="sect-t01 chkIdPwd">
+				
+				<h3>비밀번호</h3>
+				
+				<div class="box02">
+					<input type="password" class="input w100" title="아이디 입력" placeholder="기존 비밀번호 입력">
+				</div>
+	
+				<div class="box">
+					<div class="box02">
+						<input type="password" class="input w100" title="새 비밀번호 입력" placeholder="새 비밀번호 입력 (영문+숫자 조합 6자 이상 15자 이하)">
+					</div>
+					<div class="box02 end">
+						<input type="password" class="input w100" title="새 비밀번호 다시 입력" placeholder="새 비밀번호 확인">
+					</div>
+				</div>
+				
+				<div class="box-input02">
+					<button class="btn m weight w_l">변경 완료</button>
+				</div>
+		
+			</section>	
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>

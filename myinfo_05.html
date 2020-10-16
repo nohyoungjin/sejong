@@ -1,0 +1,60 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">회원탈퇴</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+
+			<section class="sect-t01 exit">
+
+				<strong>싱싱장터 회원에서 탈퇴 하시겠습니까?</strong>
+				
+				<div class="box">
+					<p>
+						회원탈퇴시 <br>
+						약관 출력 <br>
+						(이용약관 작성 후 추가) <br>
+						※ 해당 내용 관리자모드에서 <br>
+						가져옴 <br>
+					</p>
+				</div>
+
+				<div class="h-check">
+					<input type="checkbox" id="chk01" class="checkbox auto">
+					<label for="chk01" class="label t_check02">회원탈퇴 약관에 동의합니다.</label>
+				</div>
+				
+				<div class="box-input03">
+					<button class="btn m weight w60">탈퇴하기</button>
+				</div>
+
+			</section>
+
+	    </div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>

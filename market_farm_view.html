@@ -1,0 +1,121 @@
+<!--#include file="inc/header.asp"-->
+<jsp:include page="inc/header.asp"/>
+
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+
+		<div class="head sub">
+			<a href="javascript:" class="btn_back"><i></i></a>
+			<h1 class="title"><a href="#">완숙토마토 농가(김종현)</a></h1>
+			<a href="javascript:" class="btn_search"><i></i></a>
+			<div class="allmenu">
+				<a href="#btn_close" class="btn_open"><i></i></a>
+				<a href="javascript:" class="btn_search_close">닫기</a>
+			</div>
+		</div>
+		
+		<!--#include file="inc/gnb.asp"-->
+		<jsp:include page="inc/gnb.asp"/>
+
+	</div>
+	<!-- //header -->
+	
+    <div id="container">
+
+	    <!-- 개별 페이지 -->
+	    <div id="content">
+			
+			<div class="productView">
+				
+				<div class="tit">
+					<div class="sec">
+						<div class="imgWrap titimg">
+							<img class="tit" src="img/p_02.png" alt=""><!-- 20160206 클래스 추가-->
+							<div onclick="changeImage()" class="likeprod_set">
+								<a href="javascript:"><img id="likeimg" src="img/likeprod_off.png" alt=""></a>
+								<span>관심상품 추가</span>
+							</div>
+
+							<script type="text/javascript">
+
+								function changeImage() {
+									var image = document.getElementById('likeimg');
+									if (image.src.match("likeprod_off")) {
+										image.src = "img/likeprod_on.png";
+									} else {
+										image.src = "img/likeprod_off.png";
+									}
+								}
+
+							</script>
+						</div>
+						<div class="data">
+							<div class="top">
+								<span class="name">김종현</span>
+								<span class="tit01">완숙토마토</span>	
+							</div>
+							<div class="btm">
+								<a href="market_farm_evaluation.html"><img src="img/popular.png" alt="상품평"></a>
+								<p class="star_rating">
+									<a href="#" class="on">상품평</a>
+									<a href="#" class="on">상품평</a>
+									<a href="#" class="on">상품평</a>
+									<a href="#">상품평</a>
+									<a href="#">상품평</a>
+								</p>
+								<span class="date">받은 새싹 수 : 00(00년 0월)</span>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<div class="intro">
+					<h3>상품소개</h3>
+					<h4>재배이력</h4>
+					<ul>
+						<li>'17/06/07 : 거름주기 (흙 만들기)</li>
+						<li>'17/06/07 : 거름주기 (흙 만들기)</li>
+						<li>'17/06/07 : 거름주기 (흙 만들기)</li>
+						<li>'17/06/07 : 거름주기 (흙 만들기)</li>
+						<li>'17/06/07 : 거름주기 (흙 만들기)</li>
+						<li>'17/06/07 : 거름주기 (흙 만들기)</li>
+						<li>'17/06/07 : 거름주기 (흙 만들기)</li>
+					</ul>
+					<!-- 농가에서 등록한 상품 소개가 없을 때 -->
+					<!--
+					<ul>
+						<li class="none">농가에서 등록한 상품 소개가 없습니다.</li>
+					</ul>
+					-->
+
+				</div>
+
+				<div class="intro01">
+					<h3>농가소개</h3>
+					<ul>
+						<li>
+							<div class="imgWrap"><img src="img/p_02.png" alt=""></div>
+							<div class="data">
+								<div class="top">
+									<span class="name">김종현</span>
+									<span class="place"><strong>도담점(1호점)</strong></span>
+								</div>
+								<div class="btm cont">
+									<p class="txt">
+									새로운 한해의 체험을 연말에 시작하게 되네요.
+									시작을 위해 대대적인 청소를 하게됩니다.
+									여름내내 묵혀 두었던 먼지를 씻어내고,….시작을 대대적인 청소를 하게됩니다.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+			</div>
+	  
+		</div>
+	    <!-- //개별 페이지 -->
+
+    </div>
+
+<!--#include file="inc/footer.asp"-->
+<jsp:include page="inc/footer.asp"/>
