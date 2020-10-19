@@ -1,29 +1,40 @@
-<!--#include file="inc/header.asp"-->
-<jsp:include page="inc/header.asp"/>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  	<meta name="format-detection" content="address=no, email=no">
+  	<meta property="og:title" content="세종시 로컬푸드"/>
+  	<meta property="og:description" content=""/>
+    <title>세종시 로컬푸드</title>	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/page.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-ui-1.11.4.min.js"></script>
+</head>
+
+<body>
+
+<!-- wrap -->
 
 <div id="wrap">
+
 	<!-- header -->
+
 	<div id="header">
 
-		<div class="head sub">
-			<a href="javascript:" class="btn_back"><i></i></a>
-			<h1 class="title"><a href="#">직매장 상품(구매내역 상세)</a></h1>
-			<a href="javascript:" class="btn_search"><i></i></a>
-			<div class="allmenu">
-				<a href="#btn_close" class="btn_open"><i></i></a>
-				<a href="javascript:" class="btn_search_close">닫기</a>
-			</div>
-		</div>
+		<script src="inc/head_sub.js"></script>
 		
-		<!--#include file="inc/gnb.asp"-->
-		<jsp:include page="inc/gnb.asp"/>
+		<script src="inc/gnb.js"></script>
 
 	</div>
+
 	<!-- //header -->
 	
     <div id="container">
 
-	    <!-- 개별 페이지 -->
 	    <div id="content">
 
 			<section class="sect-t01 buy view">
@@ -34,84 +45,84 @@
 
 				<div class="table buy ver7">
 					<table border="1" cellspacing="0">
-					<colgroup>
-						<col width="28%"><col width="17%"><col width="13%"><col width="12%"><col width="13%"><col width="17%">
-					</colgroup>
-					<caption></caption>
-					<thead>
-						<tr>
-							<th scope="colgroup">상품명</th>
-							<th scope="colgroup">농가명</th>
-							<th scope="colgroup">단가</th>
-							<th scope="colgroup">수량</th>
-							<th scope="colgroup">금액</th>
-							<th scope="colgroup">상품평</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>행복유정란(10구)</td>
-							<td>이슬희</td>
-							<td>3,700</td>
-							<td>1</td>
-							<td>3,700</td>
-							<td><a href="#layer" class="buy_state varius_write_btn">등록</a></td>
-						</tr>
-						<tr>
-							<td>한우양지(272g)</td>
-							<td>이현준</td>
-							<td>6,700</td>
-							<td>1</td>
-							<td>6,700</td>
-							<td><a href="#layer" class="buy_state varius_write_btn1">적극추천</a></td>
-						</tr>
-						<tr>
-							<td>한우양지(272g)</td>
-							<td>이현준</td>
-							<td>6,700</td>
-							<td>1</td>
-							<td>6,700</td>
-							<td><a href="#layer" class="buy_state varius_write_btn2">추천</a></td>
-						</tr>
-						<tr>
-							<td>한우양지(272g)</td>
-							<td>이현준</td>
-							<td>6,700</td>
-							<td>1</td>
-							<td>6,700</td>
-							<td><a href="#layer" class="buy_state varius_write_btn3">보통</a></td>
-						</tr>
-						<tr>
-							<td>한우양지(272g)</td>
-							<td>이현준</td>
-							<td>6,700</td>
-							<td>1</td>
-							<td>6,700</td>
-							<td><a href="#layer" class="buy_state varius_write_btn4">추천안함</a></td>
-						</tr>
-						<tr>
-							<td>한우양지(272g)</td>
-							<td>이현준</td>
-							<td>6,700</td>
-							<td>1</td>
-							<td>6,700</td>
-							<td><a href="#layer" class="buy_state varius_write_btn5">나쁨</a></td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<td colspan="4">상품합계</td>
-							<td colspan="2">39,000</td>
-						</tr>
-					</tfoot>
+						<caption></caption>
+						<colgroup>
+							<col width="28%"><col width="17%"><col width="13%"><col width="12%"><col width="13%"><col width="17%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="colgroup">상품명</th>
+								<th scope="colgroup">농가명</th>
+								<th scope="colgroup">단가</th>
+								<th scope="colgroup">수량</th>
+								<th scope="colgroup">금액</th>
+								<th scope="colgroup">상품평</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>행복유정란(10구)</td>
+								<td>이슬희</td>
+								<td>3,700</td>
+								<td>1</td>
+								<td>3,700</td>
+								<td><a href="#layer" class="buy_state varius_write_btn">등록</a></td>
+							</tr>
+							<tr>
+								<td>한우양지(272g)</td>
+								<td>이현준</td>
+								<td>6,700</td>
+								<td>1</td>
+								<td>6,700</td>
+								<td><a href="#layer" class="buy_state varius_write_btn1">적극추천</a></td>
+							</tr>
+							<tr>
+								<td>한우양지(272g)</td>
+								<td>이현준</td>
+								<td>6,700</td>
+								<td>1</td>
+								<td>6,700</td>
+								<td><a href="#layer" class="buy_state varius_write_btn2">추천</a></td>
+							</tr>
+							<tr>
+								<td>한우양지(272g)</td>
+								<td>이현준</td>
+								<td>6,700</td>
+								<td>1</td>
+								<td>6,700</td>
+								<td><a href="#layer" class="buy_state varius_write_btn3">보통</a></td>
+							</tr>
+							<tr>
+								<td>한우양지(272g)</td>
+								<td>이현준</td>
+								<td>6,700</td>
+								<td>1</td>
+								<td>6,700</td>
+								<td><a href="#layer" class="buy_state varius_write_btn4">추천안함</a></td>
+							</tr>
+							<tr>
+								<td>한우양지(272g)</td>
+								<td>이현준</td>
+								<td>6,700</td>
+								<td>1</td>
+								<td>6,700</td>
+								<td><a href="#layer" class="buy_state varius_write_btn5">나쁨</a></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="4">상품합계</td>
+								<td colspan="2">39,000</td>
+							</tr>
+						</tfoot>
 					</table>
 				</div>
 
-				<div class="layer product" id="layer" style="display: none;position: fixed;z-index: 100000;background: #Fff;left: 5vw;width: 90%;top: 10%;padding: 0 0 5vw 0;height:80%;overflow-y:scroll;">
+				<div class="layer product" id="layer" style="display:none;position:fixed;overflow-y:scroll;z-index:100000;left:5vw;top:10%;width:90%;height:80%;padding:0 0 5vw 0;background:#fff">
 					<h2>상품평 등록</h2>
 					<h3>상품평을 등록해 주세요. 등록한 상품평은<br>상품정보에 노출되어 다른 소비자와 공유하게 됩니다.</h3>
 					<section>
-						<table class="tbl_info tbl_info2 ver2 mg0" style="table-layout:fixed;">
+						<table class="tbl_info tbl_info2 ver2 mg0" style="table-layout:fixed">
 							<caption></caption>
 							<colgroup>
 								<col style="width: 17%;">
@@ -165,5 +176,20 @@
 
     </div>
 
-<!--#include file="inc/footer.asp"-->
-<jsp:include page="inc/footer.asp"/>
+	<!-- //container -->
+
+	<!-- footer -->
+
+	<script src="inc/footer.js"></script>
+	
+	<!-- //footer -->
+
+</div>
+
+<!-- //wrap -->
+
+<script src="js/jquery-barcode.js"></script>
+<script src="js/util.js"></script>
+
+</body>
+</html>

@@ -1,32 +1,40 @@
-<!--#include file="inc/header.asp"-->
-<jsp:include page="inc/header.asp"/>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  	<meta name="format-detection" content="address=no, email=no">
+  	<meta property="og:title" content="세종시 로컬푸드"/>
+  	<meta property="og:description" content=""/>
+    <title>세종시 로컬푸드</title>	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/page.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-ui-1.11.4.min.js"></script>
+</head>
 
-<!--  -->
-<link href="css/yj.css" type="text/css" rel="stylesheet">
+<body>
+
+<!-- wrap -->
 
 <div id="wrap">
+
 	<!-- header -->
+
 	<div id="header">
 
-		<div class="head sub">
-			<a href="javascript:" class="btn_back"><i></i></a>
-			<h1 class="title"><a href="#">정산내역</a></h1>
-			<a href="javascript:" class="btn_search"><i></i></a>
-			<div class="allmenu">
-				<a href="#btn_close" class="btn_open"><i></i></a>
-				<a href="javascript:" class="btn_search_close">닫기</a>
-			</div>
-		</div>
+		<script src="inc/head_sub.js"></script>
 		
-		<!--#include file="inc/gnb.asp"-->
-		<jsp:include page="inc/gnb.asp"/>
+		<script src="inc/gnb.js"></script>
 
 	</div>
+
 	<!-- //header -->
 	
     <div id="container">
 
-	    <!-- 개별 페이지 -->
 	    <div id="content">
 
 			<section class="sect-t01">
@@ -54,38 +62,52 @@
 
 				<div class="table ver2">
 					<table border="1" cellspacing="0">
-					<colgroup>
-						<col width="35%"><col width="20%"><col width="45%">
-					</colgroup>
-					<caption></caption>
-					<thead>
-						<tr>
-							<th scope="colgroup">정산기간</th>
-							<th scope="colgroup">판매지점</th>
-							<th scope="colgroup">판매금액</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>2017.10.09<br>~<br>2017.10.15</td>
-							<td>도담점</td>
-							<td><a href="#"><em class="red">526,860</em> 원</a></td>
-						</tr>
-						<tr>
-							<td>2017.10.01<br>~<br>2017.10.08</td>
-							<td>아름점</td>
-							<td><a href="#"><em class="red">767,340</em> 원</a></td>
-						</tr>
-					</tbody>
+						<caption></caption>
+						<colgroup>
+							<col width="35%"><col width="20%"><col width="45%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="colgroup">정산기간</th>
+								<th scope="colgroup">판매지점</th>
+								<th scope="colgroup">판매금액</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2017.10.09<br>~<br>2017.10.15</td>
+								<td>도담점</td>
+								<td><a href="#"><em class="red">526,860</em> 원</a></td>
+							</tr>
+							<tr>
+								<td>2017.10.01<br>~<br>2017.10.08</td>
+								<td>아름점</td>
+								<td><a href="#"><em class="red">767,340</em> 원</a></td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 
 			</section>
 
 	    </div>
-	    <!-- //개별 페이지 -->
 
     </div>
 
-<!--#include file="inc/footer.asp"-->
-<jsp:include page="inc/footer.asp"/>
+	<!-- //container -->
+
+	<!-- footer -->
+
+	<script src="inc/footer.js"></script>
+	
+	<!-- //footer -->
+
+</div>
+
+<!-- //wrap -->
+
+<script src="js/jquery-barcode.js"></script>
+<script src="js/util.js"></script>
+
+</body>
+</html>

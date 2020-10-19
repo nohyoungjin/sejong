@@ -1,74 +1,83 @@
-<!--#include file="inc/header.asp"-->
-<jsp:include page="inc/header.asp"/>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  	<meta name="format-detection" content="address=no, email=no">
+  	<meta property="og:title" content="세종시 로컬푸드"/>
+  	<meta property="og:description" content=""/>
+    <title>세종시 로컬푸드</title>	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/page.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-ui-1.11.4.min.js"></script>
 
-<script type="text/javascript">
+	<script type="text/javascript">
 
-$(function() {
-	$(window).load(function() {
-		cookiedata = document.cookie;
-		if(cookiedata.indexOf("close=Y") < 0) {
-			$(".notice_pop").css("display","block");
-			$(".backface").css("display","block");
-			$(".layer").css("display", "block");
-			$(".layer").css("z-index", "99999999");
-			$(".btn_search").css("z-index","1");
-			$(".btn_back").css("z-index","1");
-			var el = $($(this).attr('href'));
-			if(!el.hasClass('open')){
-				el.addClass('open');
-			}else{
-				el.removeClass('open');
-			  }
+	$(function() {
+		$(window).load(function() {
+			cookiedata = document.cookie;
+			if(cookiedata.indexOf("close=Y") < 0) {
+				$(".notice_pop").css("display","block");
+				$(".backface").css("display","block");
+				$(".layer").css("display", "block");
+				$(".layer").css("z-index", "99999999");
+				$(".btn_search").css("z-index","1");
+				$(".btn_back").css("z-index","1");
+				var el = $($(this).attr('href'));
+				if(!el.hasClass('open')){
+					el.addClass('open');
+				}else{
+					el.removeClass('open');
+				  }
+			}
+		});
+	});
+
+	function getCookie(cname) {
+		var name = cname + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0; i<ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1);
+			if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
 		}
-	});
-});
-
-function getCookie(cname) {
-	var name = cname + "=";
-	var ca = document.cookie.split(';');
-	for(var i=0; i<ca.length; i++) {
-		var c = ca[i];
-		while (c.charAt(0)==' ') c = c.substring(1);
-		if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+		return "";
 	}
-	return "";
-}
 
-function setCookie(cname, cvalue, exdays) {
-	var d = new Date();
-	d.setTime(d.getTime() + (exdays*24*60*60*1000));
-	var expires = "expires="+d.toUTCString();
-	document.cookie = cname + "=" + cvalue + "; " + expires;
-}
-
-function couponClose() {
-	if($("input[name='pop']").is(":checked") == true) {
-		setCookie("close","Y",1);
+	function setCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+d.toUTCString();
+		document.cookie = cname + "=" + cvalue + "; " + expires;
 	}
-	$(".notice_pop").css("display","none");
-	$(".notice_pop").fadeOut(700, function() {
-		$(".modal_overlay").remove();
-	});
-}
 
-</script>
+	function couponClose() {
+		if($("input[name='pop']").is(":checked") == true) {
+			setCookie("close","Y",1);
+		}
+		$(".notice_pop").css("display","none");
+		$(".notice_pop").fadeOut(700, function() {
+			$(".modal_overlay").remove();
+		});
+	}
+
+	</script>
+</head>
+
+<body>
 
 <div id="wrap">
+
 	<!-- header -->
+
 	<div id="header">
 
-		<div class="head sub">
-			<a href="javascript:" class="btn_back"><i></i></a>
-			<h1 class="title"><a href="#">내정보</a></h1>
-			<a href="javascript:" class="btn_search"><i></i></a>
-			<div class="allmenu">
-				<a href="#btn_close" class="btn_open"><i></i></a>
-				<a href="javascript:" class="btn_search_close">닫기</a>
-			</div>
-		</div>
+		<script src="inc/head_sub.js"></script>
 		
-		<!--#include file="inc/gnb.asp"-->
-		<jsp:include page="inc/gnb.asp"/>
+		<script src="inc/gnb.js"></script>
 	
 		<ul class="depth3 gray">
 			<li class="w50"><a href="#">소비자회원</a></li>
@@ -76,11 +85,11 @@ function couponClose() {
 		</ul>
 
 	</div>
+
 	<!-- //header -->
 	
     <div id="container">
 
-	    <!-- 개별 페이지 -->
 	    <div id="content">
 
 			<section class="sect-t01">
@@ -166,7 +175,6 @@ function couponClose() {
 					</div>
 				</div>
 
-				<!-- 20180205 공지 팝업-->
 				<div class="layer notice_pop hide" id="layer">
 	
 					<a class="popup_close close" href="javascript:couponClose();"><img src="img/noticepop_close.png" alt=""></a>
@@ -198,14 +206,27 @@ function couponClose() {
 						</dd> 
 					</dl>
 				</div>
-				<!-- 20180205 공지 팝업-->
-				
+
 			</section>
 
 	    </div>
-	    <!-- //개별 페이지 -->
 
     </div>
 
-<!--#include file="inc/footer.asp"-->
-<jsp:include page="inc/footer.asp"/>
+	<!-- //container -->
+
+	<!-- footer -->
+
+	<script src="inc/footer.js"></script>
+	
+	<!-- //footer -->
+
+</div>
+
+<!-- //wrap -->
+
+<script src="js/jquery-barcode.js"></script>
+<script src="js/util.js"></script>
+
+</body>
+</html>

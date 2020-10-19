@@ -161,7 +161,6 @@ $(function () {
 		  }
 		});
 
-
 	// 직매장 상품(구매내역 상세) 팝업
 
 	$('.buy_state').on('click', function(e) {
