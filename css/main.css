@@ -20,8 +20,8 @@
 
 .visual .slick-dots {position:absolute;bottom:4vw;z-index:1000;width:100%;text-align:center}
 .visual .slick-dots li {display:inline-block}
-.visual .slick-dots a {display:block;overflow:hidden;width:2.6vw;height:2.6vw;margin:0 1vw;border:0.6vw solid #fff;background:#fff;text-indent:-999px;border-radius:50%;cursor:pointer}
-.visual .slick-dots li.slick-active a {position:relative;top:0.4vw;width:3.4vw;height:3.4vw;border:0.6vw solid #fff;background:transparent}
+.visual .slick-dots li button {display:block;overflow:hidden;width:2.8vw;height:2.8vw;margin:0 0.8vw;border:0.6vw solid #fff;background:#fff;text-indent:-999px;border-radius:50%;cursor:pointer}
+.visual .slick-dots li.slick-active button {position:relative;background:transparent}
 
 .visual_btn {position:absolute;left:50%;bottom:4vw;z-index:1;margin-left:80px}
 

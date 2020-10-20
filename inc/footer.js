@@ -12,4 +12,4 @@ str += '	<p class="txt">대표이사 : 최무락 / 사업자등록번호 : 183-8
 str += '	<p class="txt mt3">Copyright ⓒ 세종로컬푸드주식회사. All rights reserved</p>'
 str += '</div>'
 
-document.write( str );
+document.write(str);
