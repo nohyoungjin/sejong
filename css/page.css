@@ -2,6 +2,11 @@
 
 /* 서브 타이틀 */
 
+.btn_both {padding:6vw 0 3vw;border-bottom:1px solid #a4a4a4}
+.btn_both:after {display:block;clear:both;content:""}
+.btn_both .fl {float:left;font-size:4.16vw;font-weight:700}
+.btn_both .fr {position:relative;float:right;top:2vw;font-size:2.77vw;color:#ed1919}
+
 .btn_both2 {padding:4vw 0}
 .btn_both2:after {display:block;clear:both;content:""}
 .btn_both2 .fl {float:left;font-size:4vw;font-weight:700}
@@ -12,6 +17,233 @@
 .btn_both3:after {display:block;clear:both;content:""}
 .btn_both3 .fl {float:left;font-size:4vw;font-weight:700}
 .btn_both3 .fr {float:right;margin:0 3% 0 0}
+
+/* 세종형 로컬푸드 */
+
+.wrap_cont .tit_intro, 
+.area_cont .tit_intro {display:block;padding:5vw 0 0;font-weight:500;color:#66aa0e;text-align:center;letter-spacing:-0.6px}
+
+.wrap_cont .desc_info {padding:4vw 2vw;font-size:3.1vw;color:#424242;line-height:5.2vw}
+
+.sejong .wrap_cont .tit_intro {font-size:3.25vw}
+
+.area_cont {margin:5vw 0;border-top:1px dotted #959595}
+.area_cont strong {display:block;margin:4vw 2vw 0 2vw;font-size:3.7vw;color:#66aa0e}
+.area_cont img#img01 {display:block;width:68vw;height:74vw;margin:8vw auto 4vw}
+
+.area_cont p {padding:4vw 2vw 0 0;font-size:3.1vw;color:#424242;line-height:5.8vw}
+.area_cont p.str1 {font-size:3.8vw;font-weight:700;color:#66aa0e}
+.area_cont p.note {position:relative;padding:0 0 4vw 3vw;font-size:3vw;color:#66aa0e}
+.area_cont p.note:before {content:"";display:inline-block;position:relative;top:50%;left:0;width:3.12vw;height:2.08vw;padding:0 0 0 2vw;background:url(../img/cont_arrow.png) no-repeat 0 0;background-size:3.12vw 2.08vw}
+
+.area_cont dl.ver1 {width:100%;padding:1.5vw 2vw;}
+.area_cont dl.ver1:after {display:block;clear:both;content:""}
+.area_cont dl.ver1 dt {float:left;width:27%;font-weight:700;padding:0 0 1vw}
+.area_cont dl.ver1 dd {float:left;width:73%;padding:0 0 1vw}
+
+.area_cont dl.ver2 {display:table;width:100%;padding:1.5vw 2vw}
+.area_cont dl.ver2.first {padding:4vw 2vw 1.5vw 2vw}
+.area_cont dl.ver2 dt {display:table-cell;width:15%;padding:0.5vw 0;background-color:#66aa0e;font-weight:700;color:#fff;text-align:center;vertical-align:middle}
+.area_cont dl.ver2 dd {display:table-cell;width:82%;padding:0.5vw 0 0.5vw 3%;vertical-align:middle}
+
+/* 왜 로컬푸드인가? */
+
+.sect-t01.why {width:92%;margin:0 auto}
+.why .wrap_cont .tit_intro {font-size:4.51vw}
+.why .wrap_cont .desc_info {padding:4vw 0;font-size:3.125vw;text-align:center;line-height:5vw}
+.why hr {display:block;width:4.6vw;height:0.3vw;margin:3vw auto 0;border:0;background-color:#66aa0e}
+.why .wrap_cont img#img01 {display:block;width:92.2vw;height:25.5vw;margin:4vw auto 8vw}
+
+.why .area_cont .tit_intro {padding:2vw 0 0;font-size:4.51vw;text-align:center}
+.why .area_cont .desc_info {padding:4vw 0 2vw;font-size:3.125vw;text-align:center}
+
+.why .area_cont img#img02 {display:block;width:85.5vw;height:46.1vw;margin:4vw auto 8vw}
+.why .area_cont img#img03 {display:block;width:92.2vw;height:44.7vw;margin:4vw auto 8vw}
+.why .area_cont img#img04 {display:block;width:48.2vw;height:47.8vw;margin:4vw auto 8vw}
+.why .area_cont img#img05 {display:block;width:92.5vw;height:31.8vw;margin:4vw auto 8vw}
+.why .area_cont img#img06 {display:block;width:92.4vw;height:55.4vw;margin:4vw auto 8vw}
+.why .area_cont img#img07 {display:block;width:92.4vw;height:66.2vw;margin:4vw auto 8vw}
+.why .area_cont img#img08 {display:block;width:92.4vw;height:66.2vw;margin:4vw auto 8vw}
+
+/* 대표이사 인사말 */
+
+.ceo .wrap_cont p.tit_corp {padding:6vw 0 0;font-size:3.47vw;color:#424242;text-align:center;line-height:5.8vw;letter-spacing:-0.2px}
+.ceo .wrap_cont strong.tit_intro {display:block;padding:0;font-size:4.16vw;font-weight:900;color:#66aa0e;letter-spacing:1px}
+.ceo .wrap_cont img#img01 {display:block;width:72.84vw;height:auto;margin:5vw auto 2vw}
+.ceo .area_cont p {padding:6vw 0 0;font-size:3.125vw;color:#424242;line-height:5.00vw;letter-spacing:0.1px}
+.ceo .area_cont p + p {padding:4vw 0 0;letter-spacing:0.3px}
+
+/* 싱싱장터에 가면, 싱싱장터 소개 */
+
+.go .area_cont .tit_intro {color:#66aa0e}
+.go .wrap_cont .tit_intro, 
+.go .area_cont .tit_intro {font-size:4.16vw;text-align:left}
+.go .wrap_cont .desc_info {padding:3vw 0 2vw;font-size:3.125vw;color:#424242;line-height:5.8vw;letter-spacing:0.5px}
+.go .wrap_cont em {color:#d0151b}
+
+.go .area_cont ul:after {display:block;clear:both;content:""}
+.go .area_cont ul li {float:left;width:33.3%;margin:6vw 0 0;text-align:center}
+.go .area_cont ul li img {width:22.84vw;height:22.84vw}
+.go .area_cont strong {display:block;position:relative;margin:6vw 0;padding:0 0 0 2vw;font-size:3.47vw;color:#424242;line-height:1vw}
+.go .area_cont strong:before {content:'';display:block;position:absolute;left:0;width:0.6vw;height:0.6vw;background-color:#81b952}
+.go .area_cont h3 {padding-top:1.83vw;font-size:3.33vw;font-weight:700;color:#66aa0e}
+.go .area_cont p {padding:1vw 0 0;font-size:3.125vw;color:#424242;line-height:5.8vw;letter-spacing:0.3px}
+.go .area_cont img.organ {display:block;width:92.5vw;height:42.01vw;margin:6vw auto}
+
+.go .area_cont1 h4 {font-weight:700}
+.go .area_cont1 img {width:100%}
+.go .area_cont1 ul {margin-bottom:10.13vw}
+.go .area_cont1 ul li {width:auto;text-align:left}
+.go .area_cont1 ul li strong {display:inline;padding:0;color:#66aa0e}
+.go .area_cont1 ul li strong:before {background-color:#fff}
+.go .area_cont1 ul li p {padding:0}
+.go .area_cont3 p {padding-left:2vw;font-size:3vw}
+.go .table table {margin:5vw 0 8.26vw;border-top:1px solid #424242;border-bottom:1px solid #424242}
+.go .table tbody tr:last-child td {border-bottom:none}
+
+/* */
+
+.table.ver6 tbody td {font-weight:500}
+.table.ver6 tbody td:first-child {color:#424242}
+.table.ver6 tbody td:last-child {font-weight:900;color:#66aa0e}
+
+.go .table.ver10 table {border-color:#a4a4a4}
+.table.ver10 tbody th {padding:3.4vw 1.4vw;border:1px solid #a4a4a4;border-width:0 0 1px 0;background:#f3f3f3;color:#424242;line-height:4.4vw}
+.table.ver10 tbody th.t01 {border-right:1px solid #a4a4a4;border-bottom:0}
+.table.ver10 tbody th.t02 {padding:1.4vw 1.4vw}
+.table.ver10 tbody tr:last-child th {border-width:0}
+.table.ver10 tbody td {border:1px solid #a4a4a4;border-width:0 0 1px 1px}
+
+.go .table.ver11 table {border-color:#a4a4a4}
+.table.ver11 tbody td:first-child {text-align:center}
+.table.ver11 tbody td {color:#424242;text-align:left}
+
+.go .area_cont .table.ver11 ul li {position:relative;float:none;width:100%;margin:0.8vw 0 0;padding:0 0 0 4vw;font-size:3vw;text-align:left;line-height:4vw}
+.go .area_cont .table.ver11 ul li:before {content:'';display:block;position:absolute;top:1.9vw;left:2.4vw;width:0.4vw;height:0.4vw;margin-top:-0.3vw;background-color:#81b952;border-radius:50%}
+
+.go .table.ver12 table {border-color:#a4a4a4}
+.table.ver12 tbody th {padding:3.4vw 1.4vw;border:1px solid #a4a4a4;border-width:0 0 1px 0;background:#f3f3f3;color:#424242;line-height:4.4vw}
+.table.ver12 tbody tr:last-child th {border-width:0}
+.table.ver12 tbody td {padding:2.4vw 2.4vw;border:1px solid #a4a4a4;border-width:0 0 1px 1px;font-size:3vw;text-align:left;letter-spacing:-0.3vw}
+
+/* 지점안내 */
+
+.spot img {display:block}
+.spot .s01 {width:92.56vw;height:144.16vw;margin:5vw auto 7vw}
+.spot .s02 {width:68.54vw;height:128.95vw;margin:5vw auto 7vw}
+.spot.bno {border-top:none}
+.spot p.pic {padding:3vw 0 5vw}
+
+.go .area_cont.spot ul li {float:none;width:100%;margin:2vw 0 5vw;font-weight:700;text-align:center}
+.go .area_cont.spot ul li img {width:92.5vw;height:57.15vw;margin:0 auto 2vw}
+
+.spot span.red {font-size:3.2vw;color:#d0151b}
+
+/* 싱싱문화관은? */
+
+.culture .wrap_cont img#img01 {display:block;width:100%;height:51.73vw;margin:5vw auto 2vw}
+.culture .wrap_cont p {padding:1vw 0 0;font-size:3.125vw;color:#424242;line-height:6.31vw;letter-spacing:-0.5px}
+.culture .wrap_cont p b {font-size:3.125vw;color:#66aa0e}
+
+/* 층별안내도 */
+
+.floor .wrap_cont {padding:7vw 0 5vw}
+.floor img {width:100%;padding:0 2vw}
+
+/* 내부시설안내 */
+
+.fixture .boardList {background:none}
+.fixture .boardList .topSection ul li {width:33%}
+.fixture .list {display:none;} 
+.fixture .list.on {display:block !important}
+
+.fixture .list ul {display:table;padding:4vw 0 0 5vw}
+.fixture .list ul li {float:none;width:94%;margin:0 4.5vw 4vw 0;padding:0;border:none !important;text-align:left;line-height:7vw}
+.fixture .list ul li img {width:100%}
+.fixture .list ul li span {float:left;max-width:100%;height:auto;margin:1vw 0 7vw;font-size:3.2vw;color:#4c4b4b;line-height:4vw;white-space:pre-line}
+
+/* 요리교실 */
+
+.cook .area_cont ol li {padding-left:4vw;font-size:3.1vw}
+.cook .area_cont ol li:before {content:'';display:block;position:absolute;left:0;width:0.6vw;height:0.6vw;margin:2vw 0 0 4vw;background-color:#333}
+.cook .wrap_cont .tit_intro {font-size:4.16vw;text-align:left}
+.cook .area_cont {margin:0}
+
+.cook p.desc_info {padding-left:0}
+.cook p.desc_info strong {margin:0 0 2vw;padding:0;font-size:2.91vw}
+.cook p.desc_info strong:before {display:none}
+
+.cook .area_cont strong {display:block;position:relative;margin:5vw 0 0;font-size:4.16vw;color:#424242}
+
+.cook .area_cont ul li {margin:2vw 0;border:3px solid #cecece;}
+.cook .area_cont ul li h2 {padding:2.77vw;background:#eee;color:#424242;font-size:4.16vw;font-weight:700}
+.cook .area_cont ul.tx01 {margin-top:0;padding:2vw 3vw 3vw} 
+.cook .area_cont ul.tx01 li, 
+.cook .area_cont ul.tx02 li {clear:both;margin:0;border:none}
+.cook .area_cont ul.tx01 li:before {content:"*";position:relative;top:0.5vw;padding-right:1vw}
+
+.cook .area_cont ul.tx02 {padding:0 0 6vw 5vw}
+.cook .area_cont ul.tx02 li:after {display:block;clear:both;content:""}
+.cook .area_cont ul.tx02 p {float:left;padding:0;font-size:3.125vw;font-weight:700;letter-spacing:-0.08vw}
+.cook .area_cont h3 {float:left;width:21vw;font-size:3.125vw;font-weight:700;color:#66aa0e;line-height:6vw}
+
+.cook .area_cont em.em {display:inline-block;margin:2vw 0 0 0.1vw;font-size:3.8vw;font-weight:700;color:#66aa0e}
+.cook ul.re {border-bottom:1px dotted #a4a4a4}
+.cook ul.re {margin:1vw 0 0;padding:0 0 3vw}
+.cook ul.re li {position:relative;margin:0;padding:0 0 1vw 3vw;border:0;font-weight:700;line-height:5vw !important;letter-spacing:-0.5px}
+.cook ul.re li:before {content:'';display:block;position:absolute;top:2.2vw;left:0;width:1.4vw;height:0.3vw;background-color:#333}
+
+/* list */
+
+.cook .area_cont span.m {display:inline-block}
+.cook .area_cont strong.s1 {width:18vw;margin:3vw 0 0 2vw;text-align:center}
+
+/* view */
+
+.cookView .area_cont ul {display:table;width:100%}
+.cookView .area_cont ul li {line-height:5.5vw}
+.cookView .area_cont ul li:last-child {padding-bottom:2.5vw}
+
+.cookView table {margin:4vw 0}
+.cookView table tr th {width:18% !important;background:#eee !important;font-size:3.4vw;font-weight:700;color:#333 !important}
+.cookView table tr td {line-height:6vw}
+.cookView table button#paychoice {width:13vw;border-radius:2vw}
+
+.cookView table .label.t_radio {float:right;width:15vw;padding:0;border:0.5vw solid #66aa0e;border-radius:2vw;font-weight:700;text-align:center}
+.cookView table .label.t_radio:before {background:none}
+.cookView table .radio:checked + .label.t_radio:before {background-image:none}
+.cookView table .radio:checked + .label.t_radio {background-image:none;background:#66aa0e;color:white}
+
+.cookView .item {padding:5vw 0;border-bottom:1px dotted #a4a4a4;text-align:center}
+.cookView .item label {padding:0 7vw 0 3vw}
+.cookView .item .label.t_radio:before {position:absolute;top:-0.5vw;left:auto;right:0}
+.cookView .item section {width:auto;margin:0 auto}
+
+/* complete */
+
+.cook .area_cont .none {margin-top:2vw;padding:4vw;text-align:left}
+.cook .area_cont .none ul li {border:none;margin:0;font-size:3.25vw}
+.cook .area_cont .none ul li:last-child {padding:0}
+
+/* */
+
+.cook .payment {margin:3vw 0 0;padding:4vw 0;border-top:1px dotted #a4a4a4;border-bottom:1px dotted #a4a4a4}
+.cook .metro {margin:0}
+.cook .metro li a {padding:5.5vw 0 3.5vw}
+.cook .metro li + li a {padding:5.5vw 0 4.26vw}
+.cook .metro li img {width:14.37vw;height:10.13vw;margin:0 auto 2.5vw}
+.cook .metro li + li img {width:11.66vw;height:9.37vw}
+
+.cook p.txt01 {margin:4vw 0 0;font-size:2.7vw;font-weight:700;color:#66aa0e;text-align:center;letter-spacing:-0.2vw}
+
+/* 싱싱밥상 */
+
+.area_cont.eat{padding:5vw 0}
+.area_cont.eat ul li {clear:both;float:none;width:100%;margin:2vw 0 5vw;font-weight:700;text-align:center}
+.area_cont.eat ul li img {float:left;width:96vw;height:57.15vw;margin:0 auto 2vw}
+.area_cont.eat ul li span {clear:both;display:block;width:95vw;margin-bottom:5vw;text-align:center}
+
+/* */
 
 .txt-type {padding:4vw 0 2vw;border-bottom:1px solid #e0e0e0;font-size:4vw;font-weight:700}
 .txt-type-01 {padding:6vw 0 3vw;font-size:4.16vw;font-weight:700}
