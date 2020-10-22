@@ -1112,7 +1112,7 @@ tr.fna_answer td {font-weight:500 !important}
 /* 요리교실 (내정보) 20180221 수정 */
 
 ul.stress {padding:0 0 2.5vw;border-bottom:1px dotted #a4a4a4}
-ul.stress li {position:relative;padding:0 0 1vw 3vw;font-weight:700;color:#424242;line-height:5vw}
+ul.stress li {position:relative;padding:0 0 1vw 3vw;color:#424242;line-height:5vw}
 ul.stress li:before {content:'';display:block;position:absolute;top:2.2vw;left:0;width:1.4vw;height:0.3vw;background-color:#333}
 ul.stress li em {color:#ff0000}
 
@@ -1144,7 +1144,7 @@ ul.stress li em {color:#ff0000}
 .cook_info .area_con ul.tx01 {margin-top:0vw;padding:2vw 3vw 3vw} 
 
 .cook_info .area_con ul.tx02 h3 {float: left;width: 21vw;font-size: 3.125vw;font-weight: 700;line-height: 6vw;color: #66aa0e;}
-.cook_info .area_con ul.tx02 p {float:left; padding:0; font-size:3.125vw; font-weight:700; letter-spacing: -0.08vw;}
+.cook_info .area_con ul.tx02 p {float:left; padding:0; font-size:3.125vw;letter-spacing: -0.08vw;}
 
 .cook_info .area_con ul.tx02 {padding:0 0 6vw 5vw}
 .cook_info .area_con ul.tx02 li {border:none; margin:0;clear:both}
