@@ -77,7 +77,7 @@ input[type=date]::-webkit-calendar-picker-indicator {display:none}
 /* header */
 
 html, body {height:100%;background:#fff;-webkit-overflow-scrolling:touch}
-#wrap {min-width:320px;height:100%;padding-top:23.4vw}
+#wrap {min-width:320px;height:100%;padding-top:24vw}
 
 #header {position:fixed;top:0;left:0;z-index:1000;width:100%;background:#66aa0e}
 #header .head {position:relative;height:12vw}
@@ -180,7 +180,7 @@ p.txtGreeting strong {color:#d9df18}
 
 /* 하위메뉴 */
 
-ul.depth3 {height:12.08vw;border-bottom:1px solid #eee;background-color:#fff;}
+ul.depth3 {height:12vw;border-bottom:1px solid #eee;background-color:#fff;}
 ul.depth3:after {display:block;clear:both;content:""}
 ul.depth3 li {display:inline-block;position:relative;float:left;width:20%;height:100%;text-align:center}
 
@@ -197,7 +197,7 @@ ul.depth3 li.on a {color:#66aa0e}
 
 /* 회원가입 */
 
-ul.depth3.mem {height:12.08vw;border-bottom:0;background-color:#eee}
+ul.depth3.mem {height:12vw;border-bottom:0;background-color:#eee}
 ul.depth3.mem li.on {background-color:#fff}
 ul.depth3.mem li.on a {color:#66aa0e}
 ul.depth3.mem li:before {background-color:#fff}
@@ -211,17 +211,17 @@ ul.depth3.mem li.on i:before {position:relative;top:-0.2vw;left:0.2vw;font-size:
 
 /* 서브 */
 
-ul.depth3.gray {height:12.08vw;border-bottom:0;background-color:#eee}
+ul.depth3.gray {height:12vw;border-bottom:0;background-color:#eee}
 ul.depth3.gray li.on {background-color:#fff}
 ul.depth3.gray li.on a {color:#66aa0e}
 ul.depth3.gray li:before {display:none}
 
-ul.depth3.black {height:12.08vw;border-bottom:0;background-color:#424242}
+ul.depth3.black {height:12vw;border-bottom:0;background-color:#424242}
 ul.depth3.black li a {display:block;font-weight:500;color:#fff}
 ul.depth3.black li:before {background-color:#fff}
 ul.depth3.black li.on a {color:#78c514}
 
-ul.depth4 {height:12.08vw;background-color:#eee}
+ul.depth4 {height:12vw;background-color:#eee}
 ul.depth4:after {display:block;clear:both;content:""}
 ul.depth4 li {display:inline-block;position:relative;float:left;width:20%;height:100%;text-align:center}
 ul.depth4 li:before {display:block;position:absolute;top:50%;left:0;width:1px;height:3vw;margin-top:-1.5vw;background-color:#fff;content:''}

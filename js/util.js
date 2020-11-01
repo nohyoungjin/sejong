@@ -20,7 +20,7 @@
 	function depth3() {
 
 		if ($('#header .depth3').length) {
-			$('#wrap').css('padding-top','23.4vw');
+			$('#wrap').css('padding-top','24vw');
 		} else {
 			$('#wrap').css('padding-top','11.6vw');
 		}
