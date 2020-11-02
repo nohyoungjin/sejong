@@ -125,10 +125,10 @@ body.open #header #gnb {right:0}
 #header #gnb .top .btn_close {display:block;overflow:hidden;position:absolute;top:2.4vw;right:0;width:11vw;height:9.13vw;background:url(../img/common/btn_close.png) no-repeat;background-size:70%;text-indent:-9999px}
 
 #header #gnb > ul {overflow:hidden;overflow-y:scroll;width:101%;-webkit-overflow-scrolling:touch}
-#header #gnb > ul > li > a {display:block;position:relative;width:auto;padding:2.5vw 0 2.5vw 3vw;border-top:1px solid #b3d587;background:url(../img/common/bul_arrow.png) no-repeat 72.26vw center;background-size:3vw;font-size:3.7vw;color:#fff}
+#header #gnb > ul > li > a {display:block;position:relative;width:auto;padding:2.5vw 0 2.5vw 3vw;border-top:1px solid #b3d587;background:url(../img/common/bu_arrow.png) no-repeat 72.26vw center;background-size:3vw;font-size:3.7vw;color:#fff}
 #header #gnb > ul > li:last-child > a {border-bottom:0}
 #header #gnb > ul > li.on {background:#417004}
-#header #gnb > ul > li.on > a {border-top:1px solid #417004;background:#417004 url(../img/common/bul_arrow_over.png) no-repeat 72.26vw center;background-size:3vw}
+#header #gnb > ul > li.on > a {border-top:1px solid #417004;background:#417004 url(../img/common/bu_arrow_over.png) no-repeat 72.26vw center;background-size:3vw}
 
 #header #gnb > ul > li > ul {display:none}
 #header #gnb > ul > li > ul.depth2 li {padding:0 4vw;background:#569307}
