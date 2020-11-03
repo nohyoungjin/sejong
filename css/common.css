@@ -30,14 +30,14 @@
 
 .mt3 {margin:3vw 0 0}
 
-.btn.s {height:7vw;padding:0 3vw;font-size:3.125vw;line-height:7vw;border-radius:5vw}
+.btn.s {padding:1.2vw 3vw;font-size:3.125vw;border-radius:5vw}
 .btn.m, 
-.bttn.m {height:8vw;padding:0 1.95vw;font-size:3.17vw;line-height:8vw;border-radius:6vw}
-.btn.l {height:10vw;padding:0 3.65vw;font-size:3.82vw;line-height:10vw;border-radius:8vw}
+.bttn.m {padding:1.4vw 1.8vw;font-size:3.17vw;border-radius:6vw}
+.btn.l {padding:1.6vw 3.65vw;font-size:3.82vw;border-radius:8vw}
 
 .btn.slight {border:1px solid #d2d2d2;background-color:#fff;color:#363130}
 .btn.normal {border:1px solid #424242;background-color:#424242;font-size:4vw;font-weight:700;color:#fff}
-.btn.weight {display:inline-block;border:1px solid #66aa0e;background-color:#66aa0e;font-size:4vw;font-weight:700;color:#fff}
+.btn.weight {display:inline-block;border:1px solid #66aa0e;background-color:#66aa0e;font-size:3.6vw;font-weight:400;color:#fff}
 .bttn.weight1 {border:1px solid #cecece;background-color:#cecece;font-size:4vw;font-weight:700;color:#fff}
 .bttn.weight2 {border:1px solid #66aa0e;background-color:#fff;font-size:4vw;font-weight:700;color:#66aa0e}
 
@@ -107,7 +107,7 @@ html, body {height:100%;background:#fff;-webkit-overflow-scrolling:touch}
 
 body.open #header #gnb {right:0}
 
-#header #gnb {position:fixed;top:0;right:-88.8%;z-index:5000;width:79.72%;height:100%;background:#66aa0e;transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease}
+#header #gnb {position:fixed;top:0;right:-88.8%;z-index:5000;width:79.72%;height:100%;background:#fff;transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease}
 #header #gnb .top {height:12vw}
 
 #header #gnb .top:after {display:block;clear:both;content:""}
@@ -119,26 +119,26 @@ body.open #header #gnb {right:0}
 
 #header #gnb .top .fl ul {float:left}
 #header #gnb .top .fl ul:after {display:block;clear:both;content:""}
-#header #gnb .top .fl ul li {display:table;float:left;width:19.37vw;margin-right:3.40vw;border:1px solid #b3d587}
-#header #gnb .top .fl ul li a {display:table-cell;padding:1vw 0;font-size:3.125vw;color:#fff;text-align:center}
+#header #gnb .top .fl ul li {display:table;float:left;width:19.37vw;margin-right:3.40vw;border:1px solid #f1f1f1}
+#header #gnb .top .fl ul li a {display:table-cell;padding:1vw 0;font-size:3.125vw;text-align:center}
 
 #header #gnb .top .btn_close {display:block;overflow:hidden;position:absolute;top:2.4vw;right:0;width:11vw;height:9.13vw;background:url(../img/common/btn_close.png) no-repeat;background-size:70%;text-indent:-9999px}
 
 #header #gnb > ul {overflow:hidden;overflow-y:scroll;width:101%;-webkit-overflow-scrolling:touch}
-#header #gnb > ul > li > a {display:block;position:relative;width:auto;padding:2.5vw 0 2.5vw 3vw;border-top:1px solid #b3d587;background:url(../img/common/bu_arrow.png) no-repeat 72.26vw center;background-size:3vw;font-size:3.7vw;color:#fff}
+#header #gnb > ul > li > a {display:block;position:relative;width:auto;padding:2.5vw 0 2.5vw 3vw;border-top:1px solid #f1f1f1;background:url(../img/common/bu_arrow.png) no-repeat 72.26vw center;background-size:3vw;font-size:3.4vw}
 #header #gnb > ul > li:last-child > a {border-bottom:0}
 #header #gnb > ul > li.on {background:#417004}
-#header #gnb > ul > li.on > a {border-top:1px solid #417004;background:#417004 url(../img/common/bu_arrow_over.png) no-repeat 72.26vw center;background-size:3vw}
+#header #gnb > ul > li.on > a {border-top:1px solid #f1f1f1;background:#fff url(../img/common/bu_arrow_over.png) no-repeat 72.26vw center;background-size:3vw}
 
 #header #gnb > ul > li > ul {display:none}
-#header #gnb > ul > li > ul.depth2 li {padding:0 4vw;background:#569307}
-#header #gnb > ul > li > ul.depth2 li a {margin:0 4vw;padding:2.4vw 0;border-bottom:1px solid #abc983 !important;font-size:3.2vw;color:#fff}
+#header #gnb > ul > li > ul.depth2 li {padding:0 4vw;background:#fff}
+#header #gnb > ul > li > ul.depth2 li a {margin:0 4vw;padding:2.4vw 0;border-bottom:1px solid #f1f1f1 !important;font-size:3vw}
 #header #gnb > ul > li > ul.depth2 li:last-child a {border-bottom:0 !important} 
 #header #gnb > ul > li.on > ul.depth2 li:last-child > a {border-bottom:0} 
 
 #header #gnb > ul > li > ul > li > a {display:block;padding:2.4vw 0}
 
-#header #gnb .btm {position:relative;bottom:-17vw;padding:2.5vw 2.5vw 5.5vw 10vw;background:#66aa0e;color:#fff;font-size:2.4vw}
+#header #gnb .btm {position:relative;bottom:-17vw;padding:2.5vw 2.5vw 5.5vw 10vw;font-size:2.4vw}
 #header .backface {display:none;overflow:hidden;position:fixed;top:0;left:0;bottom:0;z-index:100;width:100%;height:100%;background:#000;opacity:.5;filter:alpha(opacity=50)}
 
 /* search */
@@ -207,7 +207,7 @@ ul.depth3.mem li.on i:before {position:relative;top:-0.2vw;left:0.2vw;font-size:
 
 /* 본인인증 */
 
-.myauth .btn.w_l{width:50vw !important}
+.myauth .btn.w_l {width:42vw !important}
 
 /* 서브 */
 
