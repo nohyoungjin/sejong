@@ -934,7 +934,7 @@ tr.fna_answer td {font-weight:500 !important}
 .productinfo .form_table.ver2 tbody th, 
 .productinfo .form_table.ver2 tbody td {border:none}
 .productinfo .btn2 {float:right;}
-.productinfo .btn2 button {background:#fff; color:#66aa0e; border: 0.5vw solid #66aa0e;width: 23vw;border-radius: 0vw;height: 8vw;line-height: 7vw;font-size: 3.5vw;}
+.productinfo .btn2 button {background:#fff; color:#66aa0e; border: 0.5vw solid #66aa0e;width: 23vw;border-radius: 0vw;font-size: 3.5vw;}
 .productinfo .table.ver12 tbody tr:first-child td {color:#66aa0e;}
 .productinfo .table.ver12 tbody tr:last-child td {color:#c8d3d9;}
 
