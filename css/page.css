@@ -6,13 +6,13 @@ h2.head_tit {padding:6vw 0 2vw;border-bottom:1px solid #a4a4a4;font-size:4.16vw;
 
 .btn_both2 {padding:4vw 0}
 .btn_both2:after {display:block;clear:both;content:""}
-.btn_both2 .fl {float:left;font-size:4vw;font-weight:700}
+.btn_both2 .fl {float:left;font-size:4vw;font-weight:500}
 .btn_both2 .fr {float:right}
 .btn_both2 .fr a {padding:1.5vw;border:0.2vw solid #66aa0e;color:#66aa0e;font-size:3vw;font-weight:500}
 
 .btn_both3 {padding:0}
 .btn_both3:after {display:block;clear:both;content:""}
-.btn_both3 .fl {float:left;font-size:4vw;font-weight:700}
+.btn_both3 .fl {float:left;font-size:4vw;font-weight:500}
 .btn_both3 .fr {float:right;margin:0 3% 0 0}
 
 /* 세종형 로컬푸드 */
@@ -244,8 +244,8 @@ h2.head_tit {padding:6vw 0 2vw;border-bottom:1px solid #a4a4a4;font-size:4.16vw;
 .form_table th {width:26%}
 .form_table td {width:74%;color:#424242}
 
-.form_table tbody th {font-size:3.5vw;font-weight:700;color:#66aa0e;text-align:left}
-.form_table tbody td {font-size:3.47vw}
+.form_table tbody th {font-size:3.3vw;font-weight:500;color:#66aa0e;text-align:left}
+.form_table tbody td {font-size:3.2vw}
 
 .form_table tbody th span {color:#ed1919}
 
@@ -349,24 +349,6 @@ ul.login_menu li a {font-size:3.47vw;font-weight:700;color: #494949}
 .searchBox02 input#srch_cook_nm {width:100%;height:9vw;line-height:9vw;}
 .searchBox02 button#searchBtn {width:100%;height:9vw;border:1px solid #66aa0e;background:#66aa0e;font-size:4vw;font-weight:700;color:#fff;line-height:9vw}
 
-
-/* 추천상품 List02 */
-
-.productList02 li {margin:0 auto;display:table;padding:5vw 0vw;border-bottom:1px dotted #888}
-.productList02 li:last-child {border:none}
-.productList02 .link {width:100%;display:block;}
-.productList02 .imgWrap {display:table-cell;width:32%;vertical-align:bottom;}
-.productList02 img {width:100%;height:auto;vertical-align: middle;}
-.productList02 .data {display:table-cell;width:65%;padding:0 0 0 5%;vertical-align:top}
-
-.productList02 .data .top:after {display:block;clear:both;content:""}
-.productList02 .data .top .name {overflow:hidden;text-overflow:ellipsis;max-width: 55%;line-height: 4vw;white-space:pre-line;float:left;padding:1.3vw 0;font-size:3.47vw;color: #4c4b4b; font-weight: 700;}/* 20180118 추천상품 List02 수정 */
-.productList02 .data .top .place {display:block;float:right;padding:1vw;font-size:3vw;line-height:3vw;color:#424242}
-.productList02 .data .top .place strong {background:url(../img/common/prod_location.png) no-repeat; font-size:3.125vw;color:#66aa0e; padding-left: 4vw; background-size: 2.22vw;}
-
-.productList02 .txt {display:-webkit-box;overflow:hidden;white-space:normal;font-size:2.77vw;color:#4a4a4a;line-height:4vw;text-overflow:ellipsis;max-height:20vw;-webkit-line-clamp: 3; -webkit-box-orient: vertical;padding-top: 4vw;}/* 20180126 추천상품 List02 수정 */
-.productList02 .noData {padding:35vw 0;font-size:4.16vw;text-align:center}
-
 /* 추천상품 view */
 
 .productView .tit{background: url(../img/common/bg_productView.png) repeat-x bottom;}
@@ -435,7 +417,6 @@ ul.login_menu li a {font-size:3.47vw;font-weight:700;color: #494949}
 .searchBox02.productsearch{padding-bottom:5.34vw; border-bottom:1px dotted #959595;}
 .searchBox02.productsearch input#prod_name{width: 78%; float: left; margin-right: 2%;}
 .searchBox02.productsearch #searchBtn{width:20%;}
-.productList.productsearch{margin-top: 2.34vw;}
 
 /* 커뮤니티 */
 
@@ -572,8 +553,8 @@ button.confirm.varius{width:28vw !important;}
 /* 내정보 (소비자) */
 
 .tbl_info {width:100%;margin:4vw 0 0}
-.tbl_info th {width:30%;padding:2vw 0 2vw 3vw;border:1px solid #d4d4d4;border-width:0 0 1px 0;background-color:#f3f3f3;font-size:3.47vw;vertical-align:middle;color:#363130;text-align:left}
-.tbl_info td {position:relative;width:70%;padding:2vw 0 2vw 3vw;border:1px solid #d4d4d4;border-width:0 0 1px 0;font-size:3.47vw !important;color:#424242;text-align:left;vertical-align:middle}
+.tbl_info th {width:30%;padding:2vw 0 2vw 3vw;border:1px solid #d4d4d4;border-width:0 0 1px 0;background-color:#f3f3f3;font-size:3.2vw;font-weight:500;vertical-align:middle;color:#363130;text-align:left}
+.tbl_info td {position:relative;width:70%;padding:2vw 0 2vw 3vw;border:1px solid #d4d4d4;border-width:0 0 1px 0;font-size:3vw !important;color:#424242;text-align:left;vertical-align:middle}
 
 .tbl_info tr:first-child th,
 .tbl_info tr:first-child td {border-top:1px solid #424242}
@@ -994,55 +975,3 @@ tr.fna_answer td {font-weight:500 !important}
 .join.box li , 
 .membership .box p, 
 .membership .box li {font-size:3vw;line-height:5vw}
-
-/* 요리교실 (내정보) 20180221 수정 */
-
-ul.stress {padding:0 0 2.5vw;border-bottom:1px dotted #a4a4a4}
-ul.stress li {position:relative;padding:0 0 1vw 3vw;color:#424242;line-height:5vw}
-ul.stress li:before {content:'';display:block;position:absolute;top:2.2vw;left:0;width:1.4vw;height:0.3vw;background-color:#333}
-ul.stress li em {color:#ff0000}
-
-.cook_info .searchBox01 {margin:5vw 2vw 2.5vw}
-.cook_info .searchBox01 label {color: #66aa0e;font-weight: 700;}
-.cook_info .searchBox01 div{width:70%;margin:0 !important;}
-.cook_info .searchBox01 div + div{width: 15vw !important;}
-.cook_info .searchBox01 div + div select{width: 16vw !important;}
-.cook_info .searchBox01 #searchBtn{width: 100%;height: 9vw;border: 1px solid #66aa0e;background: #66aa0e;font-size: 4vw;font-weight: 700;color: #fff;line-height: 9vw;}
-.cook_info .searchBox01 div .select {display:inline-block;width: 35%;height:9vw;padding:0 1.22vw;border:1px solid #808080;background:url(../img/common/select_arrow.png) no-repeat 93% 50%;background-size:2.29vw 1.38vw;font-size:3.47vw;line-height:9vw;-webkit-appearance:none;margin: 0 1vw;-moz-appearance:none;appearance:none;}
-
-.cook_info .area_con {margin:4.5vw 0;border:3px solid #cecece}
-
-.cook_info .area_con .btn_both {padding:0.2vw 0;border-bottom:0;background:#eee;width:100%;display:table}
-.cook_info .area_con .btn_both:after {display:block;clear:both;content:""}
-.cook_info .area_con .btn_both .fl {float:left;font-size:4.16vw;font-weight:700;display:table-cell;}
-.cook_info .area_con .btn_both .fr {position:relative;top:0vw;float:none;margin:0 2vw 0 0;font-size:2.77vw;color:#ed1919;width:35%;display:table-cell;vertical-align:middle;}
-
-.cook_info .area_con .btn_both .fl h2 {padding:2.77vw;font-size:4.16vw;font-weight:700;color:#424242}
-.cook_info .area_con .btn_both .fr button {width:28vw;height:7.5vw;border:0.5vw solid #66aa0e;background-color:#fff;font-size:3.47vw;font-weight:700;color:#66aa0e;line-height:7vw;cursor:pointer}
-
-.cook_info .area_con .btn_both .fr button.pro {border-color:#424242;background-color:#424242;color:#fff}
-.cook_info .area_con .btn_both .fr button.com {border-color:#66aa0e;background-color:#66aa0e;color:#fff}
-
-.cook_info .area_con strong {display:inline-block;width:18vw;margin:3vw 0 0 0.5vw;height:6vw;font-size:3.8vw;font-weight:700;color:#424242;text-align:center;line-height:6vw}
-
-.cook_info .area_con ul.tx01 li {border:none;margin:0;clear:both}
-.cook_info .area_con ul.tx01 li:before {content: "*"; position: relative; top: 0.5vw; padding-right: 1vw;}
-.cook_info .area_con ul.tx01 {margin-top:0vw;padding:2vw 3vw 3vw} 
-
-.cook_info .area_con ul.tx02 h3 {float: left;width: 21vw;font-size: 3.125vw;font-weight: 700;line-height: 6vw;color: #66aa0e;}
-.cook_info .area_con ul.tx02 p {float:left; padding:0; font-size:3.125vw;letter-spacing: -0.08vw;}
-
-.cook_info .area_con ul.tx02 {padding:0 0 6vw 5vw}
-.cook_info .area_con ul.tx02 li {border:none; margin:0;clear:both}
-.cook_info .area_con ul.tx02 li:after {display:block;clear:both;content:""}
-
-/* 공지 팝업(내정보) */
-
-.notice_pop{display: none;z-index: 999999;position: fixed;top: 30vw;width: 93%;margin: 3% 1%;}
-.notice_pop a.close{float: right;position: relative;top: 3.291vw;height: 7.70vw;}
-.notice_pop a.close img{width: 7.70vw;height: 7.70vw;margin:0;}
-.notice_pop .wrapCheckAgree.notice{position: relative;right: 5vw;z-index: 9999999;float: right;padding: 4vw 0;width: 29vw;border-bottom:none;}
-.notice_pop label{color: #fff !important;}
-.notice_pop .list-notice-hn01.view{background: #fff;clear: both;overflow-y: scroll;height: 69%;width: 92%;position: fixed;margin: 3% 1%;top: 41vw;}
-.notice_pop .cont{margin-top: 0vw !important; border-bottom:none; padding-top: 2vw !important;}
-.notice_pop img{margin: 2vw 0;}
