@@ -2,30 +2,21 @@
 
 	// init
 
-	// depth3();
-
 	search();
 	gnb();
+
+	depth3();
+
+	visual();
 
 	// on load
 
     $(window).on('load', function() {
 	    
-		// $('body').addClass('load');
+		$('body').addClass('load');
 		
 	});
 
-	// 높이값 조정
-
-	function depth3() {
-
-		if ($('#header .depth3').length) {
-			$('#wrap').css('padding-top','24vw');
-		} else {
-			$('#wrap').css('padding-top','11.6vw');
-		}
-
-	}
 
 	// 검색
 
@@ -35,13 +26,17 @@
 			$search_wrap = $(".search_wrap");
 
 		$('.btn_search, .btn_search_close').on('click', function(e) {
+
 			if ($btn_search.hasClass("open")) {
+
 				$btn_search.removeClass("open");
 				$search_wrap.removeClass("open");
 				$('.btn_close').trigger('click');
 				$(".btn_open").css("display","block");
 				$(".btn_search_close").css("display","none");
+
 			} else {
+
 				$btn_search.addClass("open");
 				$search_wrap.addClass("open");
 				$('.backface').stop().fadeIn('slow');
@@ -49,7 +44,9 @@
 				$(".btn_back").css("z-index","1");
 				$(".btn_search_close").css("display","block");
 				$('.s_wrap .fl input[type=text]').focus();
-			}     
+
+			}
+			
 		});
 
 	}
@@ -111,22 +108,38 @@
 
 	}
 
-
 	//
 
 	$('.depth2').css('background' , '#569307');
 
+
+	// 높이값 조정
+
+	function depth3() {
+
+		if ($('#header .depth3').length) {
+			$('#wrap').css('padding-top','24vw');
+		} else {
+			$('#wrap').css('padding-top','11.6vw');
+		}
+
+	}
+
 	// 메인 비주얼
 
-	$('.visual').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true,
-		dots: true,
-		fade: true,
-		autoplay: true,
-		autoplaySpeed: 5000
-	});
+	function visual() {
+
+		$('.visual').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			dots: true,
+			fade: true,
+			autoplay: true,
+			autoplaySpeed: 5000
+		});
+
+	}
 
 
 	// 회원가입 주소검색
