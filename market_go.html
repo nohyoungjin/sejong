@@ -27,11 +27,7 @@
 		
 		<script src="inc/gnb.js"></script>
 
-		<ul class="depth3 black">
-			<li class="on w33"><a href="#">소개</a></li>
-			<li class="w33"><a href="#">지점안내</a></li>
-			<li class="w33"><a href="#">상품소개</a></li>
-		</ul>
+		<script src="inc/menu_02.js"></script>
 
 	</div>
 
@@ -41,7 +37,7 @@
 
     <div id="container">
 
-	    <div id="content">
+	    <div id="content" class="cont_go">
 
 			<ul class="depth4">
 				<li class="w33"><a href="market_ceo.html">대표이사 인사말</a></li>
@@ -49,13 +45,13 @@
 				<li class="w33"><a href="market_info.html">싱싱장터 소개</a></li>
 			</ul>
 
-			<section class="sect-t01 go">
+			<section class="sec_con">
 
 				<h2 class="head_tit">싱싱장터에 가면</h2>
 
-				<div class="wrap_cont">
-					<strong class="tit_intro">“믿고 먹는 우리 지역 농산물이 있어요.”</strong>
-					<p class="desc_info">요즘처럼 먹거리에 대한 불신이 고조되어 있는 지금, 안전하고 신선한 먹거리를 싱싱장터에 오시면 만나실 수 있습니다. 내 자식, 내 손자손녀가 먹는다는 마음으로 농사를 지으시는 농민의 마음을 바탕으로 1년 365일 합리적인 가격을 시민에게 제공하는 것이 싱싱장터의 기본입니다.</p>
+				<div class="intro">
+					<strong class="tit">“믿고 먹는 우리 지역 농산물이 있어요.”</strong>
+					<p class="desc">요즘처럼 먹거리에 대한 불신이 고조되어 있는 지금, 안전하고 신선한 먹거리를 싱싱장터에 오시면 만나실 수 있습니다. 내 자식, 내 손자손녀가 먹는다는 마음으로 농사를 지으시는 농민의 마음을 바탕으로 1년 365일 합리적인 가격을 시민에게 제공하는 것이 싱싱장터의 기본입니다.</p>
 				</div>
 
 				<div class="area_cont">
@@ -67,11 +63,13 @@
 					<strong>신선함을 만납니다</strong>
 					<p>세종로컬푸드 주식회사와 참여농가는 다품목 소량 생산체계를 구축하여 신선한 농산물이 공급될 수 있도록 당일 수확 포장하여 출하하고 진열기간을 지킵니다.</p>
 				
-					<div class="table ver6">
+					<div class="tbl_type">
 						<table border="1" cellspacing="0">
 							<caption></caption>
 							<colgroup>
-								<col width="20%"><col><col width="20%">
+								<col width="20%">
+								<col>
+								<col width="20%">
 							</colgroup>
 							<thead>
 								<tr>
@@ -87,7 +85,7 @@
 									<td>1</td>
 								</tr>
 								<tr>
-									<td>두  부</td>
+									<td>두 부</td>
 									<td>두부</td>
 									<td>2</td>
 								</tr>
@@ -173,35 +171,13 @@
 					</div>
 				</div>
 
-				<div class="area_cont area_cont1">
-					<strong>안전한 먹거리를 만납니다</strong>
-					<h3>로컬푸드 농산물 안전성 관리 강화</h3>
-					<p>세종 로컬푸드가 ‘신선+안전’이라는 소비자 인식에 부응해 반드시 갖추어야 할 전제조건으로 농산물 4개 항목(토양화학성, 중금속, 농업용수, 농산물 잔류농약) 및 GAP 에 준하는 안전성 검사를 실시하고 있습니다.</p>
-
-					<ul>
-						<li>
-							<h4>농업기술센터</h4>
-							<p>토양화학성, 중금속, 농업용수 수질검사 <strong>→</strong> 1년 540점</p>
-						</li>
-						<li>
-							<h4>가축위생연구소 + 농산물품질관리원</h4>
-							<p>농산물 잔류농약 검사 <strong>→</strong> 1년 400점</p>
-							<p>(가축위생연구소 350, 농산물품질관리원 50)</p>
-						</li>
-					</ul>
-
-					<img src="img/market/ad_04.png" alt="">
+				<div class="area_cont">
+					<img src="img/market/ad_04.png" id="img1" alt="">
 				</div>
 
 				<div class="area_cont area_cont3">
 					<strong>착한 가격의 농산물을 만납니다.</strong>
-					<p>
-						판매가격은 전년도 평균 소매가격, 작황, 타 로컬푸드 매장 등의 공신력<br> 
-						있는 유통시장 가격을 고려하여 가격조정위원회 및 품목별 가격 협의회를<br> 
-						통해 결정하며, 회사와 생산자가 협의한 필수 품목에 대해서는 연중 균등<br> 
-						가격제를 원칙으로 합니다.<br>
-						(단, 가온 품목은 동절기와 하절기를 구분 할 수 있습니다.)
-					</p>
+					<p>판매가격은 전년도 평균 소매가격, 작황, 타 로컬푸드 매장 등의 공신력 <br>있는 유통시장 가격을 고려하여 가격조정위원회 및 품목별 가격 협의회를 <br>통해 결정하며, 회사와 생산자가 협의한 필수 품목에 대해서는 연중 균등 <br>가격제를 원칙으로 합니다. <br>(단, 가온 품목은 동절기와 하절기를 구분 할 수 있습니다.)</p>
 				</div>
 
 			</section>

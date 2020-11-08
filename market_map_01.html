@@ -37,79 +37,54 @@
 
     <div id="container">
 
-	    <div id="content">
+	    <div id="content" class="cont_map">
 
 			<ul class="depth4">
 				<li class="on w50"><a href="market_map_01.html">1호점</a></li>
 				<li class="w50"><a href="market_map_02.html">2호점</a></li>
 			</ul>
 
-			<section class="sect-t01 go">
-				
-				<!-- * Daum 지도 - 지도퍼가기 -->
-
-				<!-- 1. 지도 노드 -->
-
-				<div id="daumRoughmapContainer1516769497488" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div>
-
-				<!--
-					2. 설치 스크립트
-					* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-				-->
-
-				<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://spi.maps.daum.net/imap/map_js_init/roughmapLoader.js"></script>
-
-				<!-- 3. 실행 스크립트 -->
-
-				<script charset="UTF-8">
-
-					new daum.roughmap.Lander({
-						"timestamp" : "1516769497488",
-						"key" : "mh7e",
-					}).render();
-
-				</script>
+			<section class="sec_con">
 
 				<h2 class="head_tit">싱싱장터 직매장 1호점(본점)은?</h2>
 
-				<div class="wrap_cont">
-					<p class="desc_info">2015.9.19.일 개장한 싱싱장터 도담점(1호점)은 세종시민들의 사랑을 받으며 세종시 로컬푸드 운동의 중추적 역할을 자리매김하였습니다. <br>개장 이후 총매출액 238억, 회원수 2만2천명, 구매자 수 10만8천 여 명, 등록농가수 467농가가 등록하였으며, 농가에는 소득창출을 소비자에게는 건강한 먹거리 제공을 위해 노력하고 있습니다.</p>
-					<p class="desc_info">&nbsp;도시민은 도심한복판에서 농촌을 만끽 할 수 있으며 생활권 가까이에서 언제든지 로컬푸드 구입이 가능하고 농가는 꾸준한 농산물 납품으로 소득을  올릴 수 있으니 도시-농촌 모두가 행복한 세종의 대표 매장이 되었으며, 세종시 민선6기의 핵심 전략사업인 로컬푸드 운동의 상징이 되었습니다.</p>
-				
-					<div class="table ver12">
-						<table border="1" cellspacing="0">
-							<caption></caption>
-							<colgroup>
-								<col width="20%"><col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th scope="row">개 장 일</th>
-									<td>2015.9.19</td>
-								</tr>
-								<tr>
-									<th scope="row">위    치</th>
-									<td>세종특별자치시 보듬6로 16(도담동 654)</td>
-								</tr>
-								<tr>
-									<th scope="row">규    모</th>
-									<td>대지 21,080(약 6,377평), 건축연면적 794(약 240평)</td>
-								</tr>
-								<tr>
-									<th scope="row">사 업 비</th>
-									<td>18억 9천만원</td>
-								</tr>
-								<tr>
-									<th scope="row">자 본 금</th>
-									<td>10억원 (4.8, 농협 2.4, 축협 1.5, SK 1, 생산자법인 0.3) 출자</td>
-								</tr>
-								<tr>
-									<th scope="row">주요시설</th>
-									<td>매장, 미니키친, 카페, 저온저장고, 포장작업장, 사무실, 주차시설 등</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>				
+				<div class="intro">
+					<p class="desc">2015.9.19.일 개장한 싱싱장터 도담점(1호점)은 세종시민들의 사랑을 받으며 세종시 로컬푸드 운동의 중추적 역할을 자리매김하였습니다. <br>개장 이후 총매출액 238억, 회원수 2만2천명, 구매자 수 10만8천 여 명, 등록농가수 467농가가 등록하였으며, 농가에는 소득창출을 소비자에게는 건강한 먹거리 제공을 위해 노력하고 있습니다.</p>
+					<p class="desc">도시민은 도심한복판에서 농촌을 만끽 할 수 있으며 생활권 가까이에서 언제든지 로컬푸드 구입이 가능하고 농가는 꾸준한 농산물 납품으로 소득을  올릴 수 있으니 도시-농촌 모두가 행복한 세종의 대표 매장이 되었으며, 세종시 민선6기의 핵심 전략사업인 로컬푸드 운동의 상징이 되었습니다.</p>
+
+					<table border="0" cellspacing="0" class="tbl_type">
+						<caption></caption>
+						<colgroup>
+							<col width="20%">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">개 장 일</th>
+								<td>2015.9.19</td>
+							</tr>
+							<tr>
+								<th scope="row">위 치</th>
+								<td>세종특별자치시 보듬6로 16(도담동 654)</td>
+							</tr>
+							<tr>
+								<th scope="row">규 모</th>
+								<td>대지 21,080(약 6,377평), 건축연면적 794(약 240평)</td>
+							</tr>
+							<tr>
+								<th scope="row">사 업 비</th>
+								<td>18억 9천만원</td>
+							</tr>
+							<tr>
+								<th scope="row">자 본 금</th>
+								<td>10억원 (4.8, 농협 2.4, 축협 1.5, SK 1, 생산자법인 0.3) 출자</td>
+							</tr>
+							<tr>
+								<th scope="row">주요시설</th>
+								<td>매장, 미니키친, 카페, 저온저장고, 포장작업장, 사무실, 주차시설 등</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 
 				<div class="area_cont spot">

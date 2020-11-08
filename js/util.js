@@ -224,116 +224,6 @@
 		  }
 		});
 
-	// 직매장 상품(구매내역 상세) 팝업
-
-	$('.buy_state').on('click', function(e) {
-		e.preventDefault();
-		$(".backface").css("display","block");
-		$(".btn_search").css("z-index","1");
-		$(".btn_back").css("z-index","1");
-		var el = $($(this).attr('href'));
-		if (!el.hasClass('open')) {
-			el.addClass('open');
-		} else {
-			el.removeClass('open');
-		}
-	}); 
-
-	// 직매장 상품(구매내역 상세) 팝업 만족도
-
-    $('.product ul a').on('click', function(e) {
-			if ($(this).hasClass("on")) {
-				$(this).removeClass("on");
-			} else {
-				$('.product ul a').removeClass("on");
-				$(this).addClass("on");
-			}     
-		});
-
-	// 생산자 전용 공지 팝업
-
-	$('.notice_pop .close').on('click', function(e) {
-		$('.notice_pop').css('display' ,'none');   
-		$(".backface").css("display","none");
-	});
-
-    // 메인 레이어 팝업
-
-	function mainPopup() {
-        var width = $(".notice_layer_popup").outerWidth();
-        var height = $(".notice_layer_popup").outerHeight();
-        var marginTop = height / 2;
-        var marginLeft = width / 2;
-
-        $(".notice_layer_popup").css({
-            marginTop: -marginTop,
-            marginLeft: -marginLeft
-        }).show().next().show();
-    }
-
-    // 쿠키 가져오기
-    
-	function getCookieValue(cookieName) {
-        var found = false;
-        var start, end;
-        var i = 0;
-
-        while (i <= document.cookie.length) {
-            start = i;
-            end = start + cookieName.length;
-
-            if (document.cookie.substring(start, end) == cookieName) {
-                found = true;
-                break;
-            }
-            i++;
-        }
-
-        if (found == true) {
-            start = end + 1;
-            end = document.cookie.indexOf(";", start);
-            if (end < start)
-                end = document.cookie.length;
-            return document.cookie.substring(start, end);
-        }
-        return "";
-    }
-
-    // 팝업창 열기
-    
-	function openPopup() {
-        var cookieValue = getCookieValue("popup_notice_1");
-        if (cookieValue != "no") {
-            mainPopup();
-        }
-    }
-
-    openPopup();
-
-    // 쿠키 저장하기
-    
-	function setCookie(cookieName, cookieValue, expiredays) {
-        var todayDate = new Date();
-        todayDate.setDate(todayDate.getDate() + expiredays);
-        document.cookie = cookieName + "=" + escape(cookieValue) + "; path=/; expires=" + todayDate.toGMTString() + ";"
-    }
-
-    // 팝업창 닫기
-    
-	function closePop() {
-        if (document.form1.check1.checked) {
-            setCookie(document.form1.check1.value, "no", 1);
-        }
-        $(".notice_layer_popup").hide().next().hide();
-    }
-
-    $(".btn_pop_close").on("click", function () {
-        closePop();
-    });
-
-    $(".btn_pop_close").on("click", function () {
-        $(".notice_layer_popup").hide().next().hide();
-    });
 
 	// 회원가입 전체동의
 
@@ -341,15 +231,6 @@
 		$( '.join' ).prop( 'checked', this.checked );
     });
 
-	// 인기도 
-
-	/* $ ".star_rating a").click(function() {
-		 $(this).parent().children("a").removeClass("on");
-		 $(this).addClass("on").prevAll("a").addClass("on");
-		 $('.star_rating a.on').html('인기도 on');
-		 $('.star_rating a').html('인기도 off');
-		 return false;
-	}); */
 
 	// FAQ
 

@@ -4,8 +4,7 @@
 
 /* common */
 
-.sect-t01 {margin:0 2.3vw 2.3vw}
-.sect-t02 {margin:0 0 2.3vw}
+.sec_con {margin:0 2.3vw 2.3vw}
 
 .hr01 {display:block;width:97.46%;height:0;margin:4.5vw auto 2vw;border:1px dotted #959595;border-width:1px 0 0 0;background-color:transparent}
 .hr02 {display:block;width:94%;height:0;margin:0 auto;border:1px dotted #959595;border-width:1px 0 0 0;background-color:transparent}
@@ -30,28 +29,28 @@
 
 .mt3 {margin:3vw 0 0}
 
-.btn.s {padding:1.2vw 3vw;font-size:3.125vw;border-radius:5vw}
+.btn.s {padding:0.9vw 1.5vw;font-size:2.8vw;border-radius:3vw}
 .btn.m, 
-.bttn.m {padding:1.4vw 1.8vw;font-size:3.17vw;border-radius:6vw}
-.btn.l {padding:1.6vw 3.65vw;font-size:3.82vw;border-radius:8vw}
+.bttn.m {padding:1.1vw 1.5vw;font-size:3.2vw;border-radius:4vw}
+.btn.l {padding:1.3vw 1.5vw;font-size:3.4w;border-radius:5vw}
 
 .btn.slight {border:1px solid #d2d2d2;background-color:#fff;color:#363130}
-.btn.normal {border:1px solid #424242;background-color:#424242;font-size:4vw;font-weight:700;color:#fff}
-.btn.weight {display:inline-block;border:1px solid #66aa0e;background-color:#66aa0e;font-size:3.6vw;font-weight:400;color:#fff}
-.bttn.weight1 {border:1px solid #cecece;background-color:#cecece;font-size:4vw;font-weight:700;color:#fff}
-.bttn.weight2 {border:1px solid #66aa0e;background-color:#fff;font-size:4vw;font-weight:700;color:#66aa0e}
+.btn.normal {border:1px solid #424242;background-color:#424242;font-size:3.2vw;fcolor:#fff}
+.btn.weight {display:inline-block;border:1px solid #66aa0e;background-color:#66aa0e;font-size:3.4vw;font-weight:400;color:#fff}
+.bttn.weight1 {border:1px solid #cecece;background-color:#cecece;font-size:3.4vw;color:#fff}
+.bttn.weight2 {border:1px solid #66aa0e;background-color:#fff;font-size:3.4vw;color:#66aa0e}
 
 .btn.normal:hover {border:1px solid #424242;background-color:#424242}
 
 .btn.w_m {width:20vw}
-.btn.w_l {width:40vw}
+.btn.w_l {width:32vw}
 
 .btn.m + .btn.m {margin-left:3vw}
 
 .box-input {text-align:center}
-.box-input01 {margin:3vw 0;text-align:center}
-.box-input02 {margin:4vw 0;text-align:center}
-.box-input03 {margin:5vw 0;text-align:center}
+.box-input01 {margin:2vw 0;text-align:center}
+.box-input02 {margin:3vw 0;text-align:center}
+.box-input03 {margin:4vw 0;text-align:center}
 
 /* */
 
@@ -246,28 +245,9 @@ ul.depth4 li.on a {color:#66aa0e}
 #container {position:relative;width:100%}
 #content {padding:0}
 
-/* layer popup */
-
-.notice_layer_popup { display:none; position: fixed; width:90%; top:50%; left:50%; padding:0 4.25vw 4.25vw; z-index: 30000; background:#fff; }
-.pop_top { position:relative; text-align: center; color: #343434; background:#fff; }
-.pop_top .title{ height: 14.26vw; line-height:14.26vw; border-bottom:1px solid #888; font-size: 5vw; text-align:left; }
-.pop_top .btn_pop_close{ position:absolute; top:1vw; right:0; font-size:7vw; }
-.pop_cnt { height:80vw; margin-bottom:4.25vw; padding: 5vw 1vw 25vw; border-bottom:1px solid #888; line-height: 1.5; text-align: left; background: #fff; }
-.pop_cnt p { margin-bottom: 4.5vw; font-size:4.44vw; }
-.pop_cnt p .radius{ display:inline-block; padding:1vw 2vw; background:#ed145b; border-radius:4vw; color:#fff; margin-right:1vw; }
-.pop_cnt p strong{ color:#000; text-decoration:underline; }
-
-.pop_btm { position:relative; }
-.pop_btm .btn_list a{ font-size:4.44vw; }
-.pop_btm .pop_check{ position:absolute; bottom:-12.5vw; left:-4.5vw; color:#fff; font-size:4.44vw; }
-.pop_btm .pop_close{ position:absolute; bottom:-13vw; right:-4.5vw; }
-.pop_btm .pop_close .btn_pop_close{ color:#fff; font-size:5vw; }
-.pop_btm .pop_close .btn_pop_close span{ font-size:4.4vw; margin-left:1vw; }
-.popup_mask{ display:none; position:absolute; top:0; right:0; bottom:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; }
-
 /* footer */
 
-#footer {clear:both; position:relative;width:100%;padding:2.5vw 0;border-top:1px solid #d9d9d9;text-align:center}
+#footer {clear:both;position:relative;width:100%;margin:6vw 0 0;padding:3vw 0;border-top:1px solid #d9d9d9;text-align:center}
 #footer .agree_wrap {width:42%;margin:0 auto}
 
 #footer ul.agree:after {display:block;clear:both;content:""}
