@@ -79,7 +79,7 @@ a.btn_link i:before {content:"+";display:inline-block;position:relative;top:-0.2
 /* 메인 추천상품 (HOME) */
 
 .lst_recom {position:relative;margin:4vw 0}
-.lst_recom h3.tit {display:inline-block;padding:0 0 2vw 2.67%;color:#4c4b4b}
+.lst_recom h3.tit {display:inline-block;padding:0 0 2vw 2.67%;font-size:3.5vw;font-weight:500;color:#4c4b4b}
 
 .lst_recom a.btn_link {display:inline-block;top:-1vw;right:3vw}
 

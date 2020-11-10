@@ -6,8 +6,10 @@
 	gnb();
 
 	depth3();
-
 	visual();
+
+	faq();
+	qna();
 
 	// on load
 
@@ -17,32 +19,31 @@
 		
 	});
 
-
-	// 검색
+	// search
 
 	function search() {
 
-		var $btn_search = $(".btn_search"),
-			$search_wrap = $(".search_wrap");
+		var $btn_search = $('.btn_search'),
+			$search_wrap = $('.search_wrap');
 
 		$('.btn_search, .btn_search_close').on('click', function(e) {
 
-			if ($btn_search.hasClass("open")) {
+			if ($btn_search.hasClass('open')) {
 
 				$btn_search.removeClass("open");
 				$search_wrap.removeClass("open");
 				$('.btn_close').trigger('click');
-				$(".btn_open").css("display","block");
-				$(".btn_search_close").css("display","none");
+				$('.btn_open').css('display','block');
+				$('.btn_search_close').css('display','none');
 
 			} else {
 
-				$btn_search.addClass("open");
-				$search_wrap.addClass("open");
+				$btn_search.addClass('open');
+				$search_wrap.addClass('open');
 				$('.backface').stop().fadeIn('slow');
-				$(".btn_open").css("display","none");
-				$(".btn_back").css("z-index","1");
-				$(".btn_search_close").css("display","block");
+				$('.btn_open').css("display","none");
+				$('.btn_back').css('z-index','1');
+				$('.btn_search_close').css('display','block');
 				$('.s_wrap .fl input[type=text]').focus();
 
 			}
@@ -59,8 +60,8 @@
 			e.preventDefault();
 			$('body').toggleClass('open');
 			$('.backface').stop().fadeIn('slow');
-			$('.btn_search').css('z-index', '1');
-			$('.btn_back').css('z-index', '1');
+			$('.btn_search').css('z-index','1');
+			$('.btn_back').css('z-index','1');
 		});
 
 		$('.btn_close').on('click', function(e) {
@@ -69,51 +70,50 @@
 			$('#header #gnb > ul > li > a').removeClass('selected').next().hide();
 			$('.backface').stop().fadeOut('slow');
 
-			$('.btn_search').css('z-index', '1000');
-			$('.btn_back').css('z-index', '1000');
+			$('.btn_search').css('z-index','1000');
+			$('.btn_back').css('z-index','1000');
 		});
 
 		$(document).on('click touchstart', '.backface', function(e) {
-			if ($("body").hasClass("open")) {
+
+			if ($('body').hasClass('open')) {
 				$('.btn_close').trigger('click');
 			}
+
 		});
 
 		//
 
-		var part = -1;
+		var early = -1;
 
 		$('#gnb > ul > li').each(function(q) {
 			$(this).find(' > a').on('click', function() {
-				if (q != part) {
 
-					$('#gnb > ul > li').eq(part).removeClass('on');
-					$('#gnb > ul > li').eq(part).find('ul').stop().slideUp(300);
+				if (q != early) {
 
-					part = q;
+					$('#gnb > ul > li').eq(early).removeClass('on');
+					$('#gnb > ul > li').eq(early).find('ul').stop().slideUp(300);
+
+					early = q;
 
 					$(this).parent().addClass('on');
 					$(this).next().stop().slideDown(300);
 
 				} else {
 
-					$('#gnb > ul > li').eq(part).removeClass('on');
-					$('#gnb > ul > li').eq(part).find('ul').stop().slideUp(300);
+					$('#gnb > ul > li').eq(early).removeClass('on');
+					$('#gnb > ul > li').eq(early).find('ul').stop().slideUp(300);
 
-					part = -1;
+					early = -1;
 				
 				}
+
 			});
 		});
 
 	}
 
-	//
-
-	$('.depth2').css('background' , '#569307');
-
-
-	// 높이값 조정
+	// depth3 adjustment
 
 	function depth3() {
 
@@ -125,9 +125,11 @@
 
 	}
 
-	// 메인 비주얼
+	// visual
 
 	function visual() {
+
+		if (!$('body').hasClass('home')) { return; }
 
 		$('.visual').slick({
 			slidesToShow: 1,
@@ -141,6 +143,61 @@
 
 	}
 
+	// faq
+
+	function faq() {
+
+		$('.faq_list dl dt a').on('click', function() {
+
+			if ($(this).parent().next().css('display') == 'none') {
+
+				$('.faq_list dl dt a').removeClass('on');
+				$('.faq_list dl dd').slideUp(150);
+				$(this).addClass('on');
+				$(this).parent().next().slideDown(150);
+
+			} else {
+
+				$('.faq_list dl dt a').removeClass('on');
+				$('.faq_list dl dd').slideUp(150);
+
+			}
+
+		});
+
+	}
+
+	// qna
+
+	function qna() {
+		
+		$('.fna_answer').each(function() {
+			$(this).addClass('fna_hidden');
+		});
+
+		$('.fna_answer').find('div').css('display','none');
+
+		$('.fna_container tr').not('.fna_answer').click(function() {
+
+			if ($(this).next('tr').hasClass('fna_hidden')) {
+
+				$('.fna_container tr').not('.fna_answer').removeClass('active');
+				$(this).addClass('active');
+				$('.fna_answer').addClass('fna_hidden').find('div').slideUp(150);
+				$(this).next('tr').removeClass('fna_hidden').find('div').slideDown(150);
+
+			} else {
+
+				$(this).removeClass("active");
+				$(this).next("tr").addClass("fna_hidden");
+				$(this).next("tr").find("div").slideUp(150);
+
+			}
+
+		});
+
+	}
+
 
 	// 회원가입 주소검색
 
@@ -150,8 +207,8 @@
 
 		if ($("#layer").hasClass("open")) {
 			$("#btnCloseLayer").css("display","block");
-			$("#layer").css("z-index","9999999");
-			$("#btnCloseLayer").css("z-index","9999999");
+			$("#layer").css("z-index","99999");
+			$("#btnCloseLayer").css("z-index","99999");
 			$('.backface').css("display","block");
 			$(".btn_search").css("z-index","0");
 			$(".btn_back").css("z-index","0");
@@ -176,19 +233,6 @@
 			$(".btn_back").css("z-index","1"); 
 	});
 
-	// 싱싱문화관 탭메뉴
-
-	$(".boardList .topSection ul li a").on("click", function() {
-		var index = $(this).parent("li").index();
-		$(".boardList").find(".list").each(function(i) {
-			if (i == index) {
-				$(".boardList .topSection ul li").removeAttr("class").eq(i).attr("class", "selected");
-				$(".boardList .topSection ul li a").removeAttr("title").eq(i).attr("title", "현재탭");
-				$(".boardList .list").removeClass("on").eq(i).addClass("on");
-			}
-		});
-	});
-
 	// 개인정보변경 휴대폰번호 변경 (레이어 창)
 
 	$('.phone').on('click', function(e) {
@@ -209,63 +253,11 @@
 		$(".backface").css("display","none");
 	});
 
-	// 커뮤니티 이모저모 글쓰기 (레이어 창)
-
-	$('.variusList .varius_write_btn').on('click', function(e) {
-		e.preventDefault();
-		$(".backface").css("display","block");
-		$(".btn_search").css("z-index","1");
-		$(".btn_back").css("z-index","1");
-		var el = $($(this).attr('href'));
-		if (!el.hasClass('open')) {
-			el.addClass('open');
-		} else {
-			el.removeClass('open');
-		  }
-		});
-
-
 	// 회원가입 전체동의
 
-	$( '.join_all' ).click( function() {
-		$( '.join' ).prop( 'checked', this.checked );
+	$('.join_all').click( function() {
+		$('.join').prop('checked', this.checked);
     });
-
-
-	// FAQ
-
-	$(".faqList dl dt a").on("click", function() {
-		if ($(this).parent().next().css("display") == "none") {
-			$(".faqList dl dt a").removeClass('on');
-			$(".faqList dl dd").slideUp(150);
-			$(this).addClass('on');
-			$(this).parent().next().slideDown(150);
-		} else {
-			$(".faqList dl dt a").removeClass('on');
-			$(".faqList dl dd").slideUp(150);
-		}
-	});
-
-	// 내문의확인
-		
-	$(".fna_answer").each(function() {
-		$(this).addClass("fna_hidden");
-	});
-
-	$(".fna_answer").find("div").css("display","none");
-
-	$(".fna_container tr").not(".fna_answer").click(function() {
-		if ($(this).next("tr").hasClass("fna_hidden")) {
-			$(".fna_container tr").not(".fna_answer").removeClass("active");
-			$(this).addClass("active");
-			$(".fna_answer").addClass("fna_hidden").find("div").slideUp(150);
-			$(this).next("tr").removeClass("fna_hidden").find("div").slideDown(150);
-		} else {
-			$(this).removeClass("active");
-			$(this).next("tr").addClass("fna_hidden");
-			$(this).next("tr").find("div").slideUp(150);
-		}
-	});
 
 });
 
