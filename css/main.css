@@ -12,8 +12,8 @@
 .visual div img {width:100%}
 
 .slick-arrow {display:block;overflow:hidden;position:absolute;top:50%;z-index:10000;width:8vw;height:8vw;margin-top:-4vw;border:1px solid #e1e2e9;text-indent:-9999px;border-radius:4vw;cursor:pointer}
-.slick-prev {left:4vw;background:transparent url(../img/common/arrow_prev.png) 50% 50% no-repeat;background-size:2vw}
-.slick-next {right:4vw;background:transparent url(../img/common/arrow_next.png) 50% 50% no-repeat;background-size:2vw}
+.slick-prev {left:4vw;background:transparent url(../img/main/ico_prev.png) 50% 50% no-repeat;background-size:2vw}
+.slick-next {right:4vw;background:transparent url(../img/main/ico_next.png) 50% 50% no-repeat;background-size:2vw}
 
 .slick-prev span,
 .slick-next span {display:block;width:8vw;height:8vw;background-color:#fff;opacity:0.5}
@@ -25,7 +25,7 @@
 
 .visual_btn {position:absolute;left:50%;bottom:4vw;z-index:1;margin-left:80px}
 
-/* .btn_play {display:block;width:10px;height:13px;background:url(../img/visual_pause_icon.png) no-repeat center;text-indent:-9999px;cursor:pointer}
+/* .btn_play {display:block;width:10px;height:13px;background:url(../img/ico_play.png) no-repeat center;text-indent:-9999px;cursor:pointer}
 .btn_play.on {background:url(../img/visual_play_icon.png) no-repeat center} */
 
 /* widget (HOME) */
@@ -52,7 +52,7 @@ ul.widget li + li + li + li + li {border-left:1px solid #eee}
 
 /* 전체, 공지, 이벤트 (HOME) */
 
-.lst_latest {position:relative;padding:3vw 0 1vw;background:url(../img/common/dot.png) 0 0 repeat-x}
+.lst_latest {position:relative;padding:3vw 0 1vw;background:url(../img/main/bg_dot.png) 0 0 repeat-x}
 
 .lst_latest ul.tab {position:relative;margin:3vw 0}
 .lst_latest ul.tab:after {display:block;clear:both;content:""}
@@ -70,8 +70,8 @@ a.btn_link i:before {content:"+";display:inline-block;position:relative;top:-0.2
 .lst_latest .unify ul {display:none}
 .lst_latest .unify ul.on {display:block}
 .lst_latest .unify ul li {position:relative;margin:0 2.67%;padding:2.3vw 0 0.2vw 5vw;border-bottom:1px dotted #eee}
-.lst_latest .unify ul li:before {content:"";display:block;position:absolute;top:3.1vw;left:0;width:2.98vw;height:2.98vw;background:url(../img/common/notice.png) no-repeat 0 0;background-size:2.98vw 2.98vw}
-.lst_latest .unify ul li.event:before {width:2.08vw;height:2.77vw;margin:0 0 0 0.5vw;background:url(../img/common/event.png) no-repeat 0 0;background-size:2.08vw 2.77vw}
+.lst_latest .unify ul li:before {content:"";display:block;position:absolute;top:3.1vw;left:0;width:2.98vw;height:2.98vw;background:url(../img/main/ico_notice.png) no-repeat 0 0;background-size:2.98vw 2.98vw}
+.lst_latest .unify ul li.event:before {width:2.08vw;height:2.77vw;margin:0 0 0 0.5vw;background:url(../img/main/ico_event.png) no-repeat 0 0;background-size:2.08vw 2.77vw}
 
 .lst_latest .unify ul li a {display:inline-block;overflow:hidden;width:100%;font-size:3.1vw;color:#333;text-overflow:ellipsis;white-space:nowrap}
 .lst_latest .unify ul li a em {font-size:3.1vw;font-weight:700;color:#333}
@@ -102,10 +102,9 @@ a.btn_link i:before {content:"+";display:inline-block;position:relative;top:-0.2
 
 .lst_recom img {width:100%}
 .lst_recom .box {position:relative;padding:3vw 2vw;border:1px solid #cecece}
-.lst_recom .box:before {content:"";position:absolute;top:-0.7vw;left:2vw;width:1.38vw;height:0.69vw;background:url(../img/common/btn_arrow.png) no-repeat 0 0;background-size:1.38vw 0.69vw}
-.lst_recom .box strong {display:inline-block;overflow:hidden;position:relative;width:100%;padding:0 0 2vw 0;font-size:3.47vw;font-weight:500;text-align:left;text-overflow:ellipsis;white-space:nowrap}
+.lst_recom .box strong {display:inline-block;overflow:hidden;position:relative;width:100%;padding:0 0 2vw 0;font-size:3.4vw;font-weight:500;text-align:left;text-overflow:ellipsis;white-space:nowrap}
 
-.lst_recom .box strong.new:after {display:inline-block;position:relative;top:1vw;left:1vw;width:3.61vw;height:3.61vw;background:url(../img/common/btn_new.png) no-repeat 0 0;background-size:3.61vw 3.61vw;font-size:0;content:""}
+.lst_recom .box strong.new:after {display:inline-block;position:relative;top:0.6vw;left:1.2vw;width:3.6vw;height:3.6vw;background:url(../img/main/ico_new.png) no-repeat 0 0;background-size:3.6vw 3.6vw;font-size:0;content:""}
 
 .lst_recom dl {width:100%} 
 .lst_recom dl:after {display:block;clear:both;content:""}

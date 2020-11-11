@@ -84,16 +84,16 @@ html, body {height:100%;background:#fff;-webkit-overflow-scrolling:touch}
 #header .head:after {display:block;position:absolute;top:50%;right:12vw;width:1px;height:4vw;margin-top:-2vw;background-color:#b3d587;content:''}
 
 #header .head .btn_back {display:block;position:absolute;z-index:1000;top:2.9vw;left:2.5vw;width:6vw;height:6vw}
-#header .head .btn_back i {display:block;position:absolute;top:50%;left:50%;width:3.95vw;height:2.63vw;margin:-1.31vw 0 0 -1.97vw;background:url(../img/common/fa_arrow.png) no-repeat 0 0;background-size:3.95vw 2.63vw}
+#header .head .btn_back i {display:block;position:absolute;top:50%;left:50%;width:3.95vw;height:2.63vw;margin:-1.31vw 0 0 -1.97vw;background:url(../img/common/ico_back.png) no-repeat 0 0;background-size:3.95vw 2.63vw}
 
 #header .head .btn_search {display:block;position:absolute;z-index:1000;top:2.9vw;left:2.5vw;width:6vw;height:6vw}
-#header .head .btn_search i {display:block;position:absolute;top:50%;left:50%;width:3.05vw;height:3.40vw;margin:-1.70vw 0 0 -1.50vw;background:url(../img/common/fa_search.png) no-repeat 0 0;background-size:3.05vw 3.40vw}
+#header .head .btn_search i {display:block;position:absolute;top:50%;left:50%;width:3.05vw;height:3.4vw;margin:-1.7vw 0 0 -1.5vw;background:url(../img/common/ico_search.png) no-repeat 0 0;background-size:3.05vw 3.40vw}
 
 #header .head .btn_search.open {background-color:#66aa0e;border-radius:50%}
 #header .head .btn_search_close {display:none;z-index:1000;padding:1.1vw 0 0;background-color:#fff;font-size:2.5vw;font-weight:700;color:#424242;text-align:center;border-radius:50%} 
 
 #header .head.sub .btn_search {right:16vw !important;left:auto}
-#header .head.sub .btn_search i {margin:-1.70vw 0 0 -1.60vw}
+#header .head.sub .btn_search i {margin:-1.7vw 0 0 -1.6vw}
 
 #header .head .title {display:flex;height:100%;-webkit-dispaly:flex;justify-content:center;-webkit-justify-content:center;align-items:center;-webkit-align-items:center}
 #header .head .title a {font-size:3.8vw;font-weight:500;color:#fff}
@@ -102,7 +102,7 @@ html, body {height:100%;background:#fff;-webkit-overflow-scrolling:touch}
 
 #header .allmenu {position:absolute;top:2.9vw;right:2.5vw}
 #header .allmenu a {display:block;overflow:hidden;position:relative;width:6vw;height:6vw}
-#header .allmenu a i {display:block;position:absolute;top:50%;left:50%;width:3.95vw;height:2.29vw;margin:-1.14vw 0 0 -1.97vw;background:url(../img/common/fa_bars.png) no-repeat 0 0;background-size:3.95vw 2.29vw}
+#header .allmenu a i {display:block;position:absolute;top:50%;left:50%;width:3.95vw;height:2.29vw;margin:-1.14vw 0 0 -1.97vw;background:url(../img/common/ico_menu.png) no-repeat 0 0;background-size:3.95vw 2.29vw}
 
 body.open #header #gnb {right:0}
 
@@ -121,7 +121,7 @@ body.open #header #gnb {right:0}
 #header #gnb .top .fl ul li {display:table;float:left;width:19.37vw;margin-right:3.40vw;border:1px solid #f1f1f1}
 #header #gnb .top .fl ul li a {display:table-cell;padding:1vw 0;font-size:3.125vw;text-align:center}
 
-#header #gnb .top .btn_close {display:block;overflow:hidden;position:absolute;top:2.4vw;right:0;width:11vw;height:9.13vw;background:url(../img/common/btn_close.png) no-repeat;background-size:70%;text-indent:-9999px}
+#header #gnb .top .btn_close {display:block;overflow:hidden;position:absolute;top:2.4vw;right:0;width:11vw;height:9.13vw;background:url(../img/common/ico_close.png) no-repeat;background-size:70%;text-indent:-9999px}
 
 #header #gnb > ul {overflow:hidden;overflow-y:scroll;width:101%;-webkit-overflow-scrolling:touch}
 #header #gnb > ul > li > a {display:block;position:relative;width:auto;padding:2.5vw 0 2.5vw 3vw;border-top:1px solid #f1f1f1;background:url(../img/common/bu_arrow.png) no-repeat 72.26vw center;background-size:3vw;font-size:3.4vw}
