@@ -7,13 +7,13 @@ h2.head_tit {padding:5vw 0 2vw;border-bottom:1px solid #d9d9d9;font-size:4.2vw;f
 
 /* */
 
-.tbl_type {margin:2vw 0}
+.tbl_type {margin:3vw 0}
 .tbl_type table {width:100%;border:0;border-top:1px solid #a4a4a4}
 .tbl_type caption {font-weight:bold;text-align:left}
 .tbl_type th,
-.tbl_type td {padding:2.4vw 2vw;border:0;font-size:3vw}
+.tbl_type td {padding:2.4vw 1vw;border:0;font-size:3vw}
 
-.tbl_type thead th {border:1px solid #a4a4a4;border-width:0 1px 1px 0;background:#f3f3f3;font-weight:500;vertical-align:middle}
+.tbl_type thead th {border:1px solid #a4a4a4;border-width:0 1px 1px 0;background:#f3f3f3;font-weight:500;vertical-align:middle;line-height:4vw}
 .tbl_type tbody th {border:1px solid #a4a4a4;border-width:0 0 1px 0;background:#f3f3f3;color:#424242}
 .tbl_type tbody td {border:1px solid #a4a4a4;border-width:0 1px 1px 0;text-align:center}
 
@@ -406,25 +406,20 @@ ul.login_menu li a {font-size:3.47vw;font-weight:700;color: #494949}
 
 .searchTxt {padding:5vw 0 2vw;text-align:center;color:#424242;letter-spacing:-0.1vw}
 
-.searchBox01 {margin:5vw 0 2.5vw}
-.searchBox02 {margin:2.5vw 0 4vw}
+.searchBox {width:100%;margin:5vw 0 2.5vw}
 
-.searchBox01:after {display:block;clear:both;content:""}
-.searchBox01 div {float:left;width:30.33%;margin:0 0 0 1.27%}
-.searchBox01 div + div {width:30.33%;margin:0 3.185%}
-.searchBox01 div + div + div {width:30.33%;margin:0 1.27% 0 0}
-.searchBox01 div .select {display:inline-block;width:100%;height:8vw;padding:0 2vw;border:1px solid #808080;background:url(../img/common/select_arrow.png) no-repeat 93% 50%;background-size:2.29vw 1.38vw;font-size:3vw;line-height:8vw;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.searchBox:after {display:block;clear:both;content:""}
+.searchBox div {float:left;width:30%;margin:0}
+.searchBox div + div {width:50%;margin:0 1%}
+.searchBox div + div + div {width:18%;margin:0}
 
-.searchBox02:after {display:block;clear:both;content:""}
-.searchBox02 span {display:inline-block;float:left;width:73.73%;margin:0 0 0 1.27%;font-size:3.8vw}
-.searchBox02 span + span {position:relative;float:left;width:20.73%;margin:0 1.27% 0 3%}
+.searchBox div .select {display:inline-block;width:66%;height:8vw;padding:0 2vw;border:1px solid #ccc;background:url(../img/common/select_arrow.png) no-repeat 93% 50%;background-size:2.29vw 1.38vw;font-size:3vw;line-height:8vw;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.searchBox div + div .select {width:36%}
+.searchBox div + div .select + .select {width:28%;margin:0 0 0 1vw}
 
-.searchBox02 input#prod_name {width:100%;height:9vw;line-height:9vw;}
-
-.searchBox02 input::-webkit-input-placeholder{text-align:left; font-size:3.125vw; color:#7f7f7f;}
-.searchBox02 input#srch_prod_nm {width:100%;height:9vw;line-height:9vw;}
-.searchBox02 input#srch_cook_nm {width:100%;height:9vw;line-height:9vw;}
-.searchBox02 button#searchBtn {width:100%;height:9vw;border:1px solid #66aa0e;background:#66aa0e;font-size:4vw;font-weight:700;color:#fff;line-height:9vw}
+.searchBox label {display:inline-block;position:relative;top:0.3vw;padding:0 1vw;color:#66aa0e}
+.searchBox #searchBtn {width:100%;padding:1.3vw 0;border:1px solid #66aa0e;background:#66aa0e;font-size:3.5vw;color:#fff}
+.searchTxt {padding:2vw 0 4vw;border-bottom:1px dotted #888}
 
 /* 검색 결과 */
 
@@ -590,7 +585,7 @@ ul.login_menu li a {font-size:3.47vw;font-weight:700;color: #494949}
 .sale_both .fl em {font-size:3.47vw;font-weight:700}
 .sale_both .fr {float:right;font-size:3.47vw;font-weight:700;color:#5c9b0b}
 
-.sale_tit {display:block;margin:4vw 0 0;font-size:4.16vw}
+.sale_tit {display:block;margin:4vw 0 0;font-size:4vw}
 
 /* 판매내역상세 */
 
@@ -649,36 +644,11 @@ ul.login_menu li a {font-size:3.47vw;font-weight:700;color: #494949}
 
 /* 구매내역 */
 
-.buy label {display:inline-block;position:relative;top:0.3vw;padding:0 1vw;color:#66aa0e}
-.searchBox01.buy div .select{width:23vw;}
-.searchBox01.buy div + div{width:40% !important;}
-.searchBox01.buy div + div select{width:39% !important;}
-.searchBox01.buy div + div + div{width:19% !important;}
-.searchBox01.buy #searchBtn {width:100%;padding:1.4vw 0;border:1px solid #66aa0e;background:#66aa0e;font-size:3.5vw;color:#fff}
-.searchTxt.buy {border-bottom: 1px dotted #888;padding:5vw 0;}
-
-.table.ver7 thead tr th {font-size:2.8vw}
-.table.ver7 tbody td {position:relative;font-size:2.8vw}
-
-.table.ver7 tfoot td {border:1px solid #a4a4a4;border-width:0 1px 1px 0;text-align:center;font-size:2.8vw;font-weight:700;vertical-align:middle;line-height:5vw}
-.table.buy tbody td:first-child {color: #424242;}
-.table.ver7 tfoot td:last-child {border-width:0 0 1px}
-
-.table.ver7 tbody td a{font-size:2.8vw;}
-.table.ver7 tbody td a.varius_write_btn {position:absolute;top:55%;left:50%;width:12vw;height:5vw;margin:-3.9vw 0 0 -6vw;color:#66aa0e;font-size:3.4vw;font-weight:700;border:0.5vw solid #66aa0e;line-height:0vw;padding:3vw 0;cursor:pointer}
-
 .point p, 
 .buy.view p {padding-left:1.5vw}
 .point p:before, 
 .buy.view p:before {content:'';display:inline-block;position:relative;top:-0.5vw;left:-1.5vw;width:0.8vw;height:0.6vw;background-color:#81b952}
 .point p:before {top:-0.9vw;left:-1.5vw;width:0.6vw}
-
-/* 직매장 상품(구매내역) */
-
-.searchBox01.buy div {width:32vw;margin:0 !important;}
-.searchBox01.buy div + div {width: 41vw !important; margin: 0 3vw !important;}
-.searchBox01.buy div + div select {width: 16vw !important;}
-.searchBox01.buy div + div + div {width: 15vw !important;margin: 0vw !important;}
 
 /* 알림내역 list */
 
